@@ -23,7 +23,7 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/'>Home</Link>
+                                <Link to='/kory_stennett_static_site'>Home</Link>
                             </LinkSlot>
                             
                         </li>
@@ -52,7 +52,7 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/'>Home</Link>
+                                <Link to='/kory_stennett_static_site'>Home</Link>
                             </LinkSlot>
                             
                         </li>
@@ -80,7 +80,7 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/'>Home</Link>
+                                <Link to='/kory_stennett_static_site'>Home</Link>
                             </LinkSlot>
                             
                         </li>
@@ -108,7 +108,7 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/'>Home</Link>
+                                <Link to='/kory_stennett_static_site'>Home</Link>
                             </LinkSlot>
                             
                         </li>
