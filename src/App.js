@@ -18,7 +18,7 @@ function App() {
     <Layout>
       
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/kory_stennett_static_site" element={<HomePage />} />
         <Route path="/new-meetup" element={<ProjectsPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/artwork" element={<ArtworkPage />} />
