@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kory_stennett_static_site/static/css/main.f635ca0c.css",
-    "main.js": "/kory_stennett_static_site/static/js/main.4906e81e.js",
-    "static/media/roadsplitter mag.jpg": "/kory_stennett_static_site/static/media/roadsplitter mag.bf4a966ba359c5be1b9a.jpg",
-    "static/media/blood_acolyte.png": "/kory_stennett_static_site/static/media/blood_acolyte.1210b4b35279579f0333.png",
-    "static/media/final project.jpg": "/kory_stennett_static_site/static/media/final project.f8c034e058d10d1e4965.jpg",
-    "static/media/My_Pic.jpg": "/kory_stennett_static_site/static/media/My_Pic.bc3f10d308937204e4bb.jpg",
-    "static/media/Card_Back.png": "/kory_stennett_static_site/static/media/Card_Back.11939c65819c5f4980ed.png",
-    "static/media/beam_4.png": "/kory_stennett_static_site/static/media/beam_4.4fb62f6df850c7288421.png",
-    "static/media/myfushy.JPG": "/kory_stennett_static_site/static/media/myfushy.2f37213eae8a8bde535f.JPG",
-    "static/media/sunroof.jpg": "/kory_stennett_static_site/static/media/sunroof.531e87d48d617ec4f3f1.jpg",
-    "static/media/lightning.png": "/kory_stennett_static_site/static/media/lightning.a9a5de210d2e446239fb.png",
-    "static/media/Card_Front.png": "/kory_stennett_static_site/static/media/Card_Front.4896657e086b68d996d9.png",
-    "index.html": "/kory_stennett_static_site/index.html",
-    "main.f635ca0c.css.map": "/kory_stennett_static_site/static/css/main.f635ca0c.css.map",
-    "main.4906e81e.js.map": "/kory_stennett_static_site/static/js/main.4906e81e.js.map"
+    "main.css": "/static/css/main.f635ca0c.css",
+    "main.js": "/static/js/main.49e37d35.js",
+    "static/media/roadsplitter mag.jpg": "/static/media/roadsplitter mag.bf4a966ba359c5be1b9a.jpg",
+    "static/media/blood_acolyte.png": "/static/media/blood_acolyte.1210b4b35279579f0333.png",
+    "static/media/final project.jpg": "/static/media/final project.f8c034e058d10d1e4965.jpg",
+    "static/media/My_Pic.jpg": "/static/media/My_Pic.bc3f10d308937204e4bb.jpg",
+    "static/media/Card_Back.png": "/static/media/Card_Back.11939c65819c5f4980ed.png",
+    "static/media/beam_4.png": "/static/media/beam_4.4fb62f6df850c7288421.png",
+    "static/media/myfushy.JPG": "/static/media/myfushy.2f37213eae8a8bde535f.JPG",
+    "static/media/sunroof.jpg": "/static/media/sunroof.531e87d48d617ec4f3f1.jpg",
+    "static/media/lightning.png": "/static/media/lightning.a9a5de210d2e446239fb.png",
+    "static/media/Card_Front.png": "/static/media/Card_Front.4896657e086b68d996d9.png",
+    "index.html": "/index.html",
+    "main.f635ca0c.css.map": "/static/css/main.f635ca0c.css.map",
+    "main.49e37d35.js.map": "/static/js/main.49e37d35.js.map"
   },
   "entrypoints": [
     "static/css/main.f635ca0c.css",
-    "static/js/main.4906e81e.js"
+    "static/js/main.49e37d35.js"
   ]
 }
