@@ -1,0 +1,214 @@
+a{
+  color: #c0c0c0;
+}
+.header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 135, 184);
+    padding: 0 10%;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .header li {
+    margin-left: 3rem;
+  }
+  
+  .header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+  }
+  
+  .header a:hover,
+  .header a:active,
+  .header a.active {
+    color: white;
+  }
+
+  .headerTablet {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 135, 184);
+    padding: 0 10%;
+  }
+  
+  .logoTablet {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerTablet ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerTablet li {
+    margin-left: 3rem;
+    font-size: 1rem;
+  }
+  
+  .headerTablet a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    
+  }
+  
+  .headerTablet a:hover,
+  .headerTablet a:active,
+  .headerTablet a.active {
+    color: white;
+  }
+
+  .headerPortrait {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 135, 184);
+    padding: 0 10%;
+  }
+  
+  .logoPortrait {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerPortrait ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerPortrait li {
+    margin-left: 3rem;
+    font-size: .8rem;
+  }
+  
+  .headerPortrait a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+  }
+  
+  .headerPortrait a:hover,
+  .headerPortrait a:active,
+  .headerPortrait a.active {
+    color: white;
+  }
+
+  .headerTiny {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 135, 184);
+    padding: 0 10%;
+  }
+  
+  .logoTiny {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerTiny ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerTiny li {
+    margin-left: .3rem;
+    font-size: .3rem;
+  }
+  
+  .headerTiny a {
+    text-decoration: none;
+    font-size: .6rem;
+    
+  }
+  
+  .headerTiny a:hover,
+  .headerTiny a:active,
+  .headerTiny a.active {
+    color: white;
+  }
+
+  .headerMini {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 135, 184);
+    padding: 0 10%;
+  }
+  
+  .logoMini {
+    font-size: .9rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerMini ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerMini li {
+    margin-left: .3rem;
+    font-size: .1rem;
+  }
+  
+  .headerMini a {
+    text-decoration: none;
+    font-size: .3rem;
+    
+  }
+  
+  .headerMini a:hover,
+  .headerMini a:active,
+  .headerMini a.active {
+    color: white;
+  }
+  
+  .badge {
+    background-color: #cc2062;
+    color: white;
+    border-radius: 12px;
+    padding: 0 1rem;
+    margin-left: 0.5rem;
+  }

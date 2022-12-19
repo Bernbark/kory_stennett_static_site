@@ -1,0 +1,13 @@
+.linkSlot {
+    background-color: rgb(65, 32, 32);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    border: 1rem black;
+  }
+
+.linkSlot :hover{
+    background-color: rgb(117, 54, 54);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgb(78, 45, 45);
+    border: 1rem rgb(126, 53, 53);
+}
