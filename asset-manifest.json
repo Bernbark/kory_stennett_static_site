@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f635ca0c.css",
-    "main.js": "/static/js/main.49e37d35.js",
+    "main.js": "/static/js/main.97ba40af.js",
     "static/media/roadsplitter mag.jpg": "/static/media/roadsplitter mag.bf4a966ba359c5be1b9a.jpg",
     "static/media/blood_acolyte.png": "/static/media/blood_acolyte.1210b4b35279579f0333.png",
     "static/media/final project.jpg": "/static/media/final project.f8c034e058d10d1e4965.jpg",
@@ -14,10 +14,10 @@
     "static/media/Card_Front.png": "/static/media/Card_Front.4896657e086b68d996d9.png",
     "index.html": "/index.html",
     "main.f635ca0c.css.map": "/static/css/main.f635ca0c.css.map",
-    "main.49e37d35.js.map": "/static/js/main.49e37d35.js.map"
+    "main.97ba40af.js.map": "/static/js/main.97ba40af.js.map"
   },
   "entrypoints": [
     "static/css/main.f635ca0c.css",
-    "static/js/main.49e37d35.js"
+    "static/js/main.97ba40af.js"
   ]
 }
