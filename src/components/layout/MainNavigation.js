@@ -23,23 +23,34 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/kory_stennett_static_site'>Home</Link>
+                                <div>
+                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                </div>
+                                
                             </LinkSlot>
                             
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/new-meetup'>Projects</Link>
+                                <div>
+                                    <Link to='/new-meetup'>Projects</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/favorites'>Faves</Link>
+                                <div>
+                                    <Link to='/favorites'>Faves</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/artwork'>"Art"</Link>
+                                <div>
+                                    <Link to='/artwork'>"Art"</Link>
+                                </div>
                             </LinkSlot>
                         </li>
                     </ul>
@@ -52,23 +63,34 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/kory_stennett_static_site'>Home</Link>
+                                <div>
+                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                </div>
+                                
                             </LinkSlot>
                             
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/new-meetup'>Projects</Link>
+                                <div>
+                                    <Link to='/new-meetup'>Projects</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/favorites'>Faves</Link>
+                                <div>
+                                    <Link to='/favorites'>Faves</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/artwork'>"Art"</Link>
+                                <div>
+                                    <Link to='/artwork'>"Art"</Link>
+                                </div>
                             </LinkSlot>
                         </li>
                     </ul>
@@ -80,23 +102,34 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/kory_stennett_static_site'>Home</Link>
+                                <div>
+                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                </div>
+                                
                             </LinkSlot>
                             
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/new-meetup'>Projects</Link>
+                                <div>
+                                    <Link to='/new-meetup'>Projects</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/favorites'>Faves</Link>
+                                <div>
+                                    <Link to='/favorites'>Faves</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/artwork'>"Art"</Link>
+                                <div>
+                                    <Link to='/artwork'>"Art"</Link>
+                                </div>
                             </LinkSlot>
                         </li>
                     </ul>
@@ -108,23 +141,34 @@ function MainNavigation() {
                     <ul>
                         <li>
                             <LinkSlot>
-                                <Link to='/kory_stennett_static_site'>Home</Link>
+                                <div>
+                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                </div>
+                                
                             </LinkSlot>
                             
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/new-meetup'>Projects</Link>
+                                <div>
+                                    <Link to='/new-meetup'>Projects</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/favorites'>Faves</Link>
+                                <div>
+                                    <Link to='/favorites'>Faves</Link>
+                                </div>
+                                
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <Link to='/artwork'>"Art"</Link>
+                                <div>
+                                    <Link to='/artwork'>"Art"</Link>
+                                </div>
                             </LinkSlot>
                         </li>
                     </ul>

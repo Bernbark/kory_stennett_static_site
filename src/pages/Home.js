@@ -19,7 +19,7 @@ function HomePage(){
                             place for me to practice programming practices, so in a way this is an experimental playground as well.
                         </p>
                         
-                        <img src={myPic} alt="My Pic Should Be Here..." />
+                        
                         
                         
                     </Card>
@@ -35,6 +35,10 @@ function HomePage(){
 
                 <p>It's time for me to get serious about creating a presence for myself while applying for positions.
                     I believe that building this website will help give a human element to the applications I send, and I hope that someone sees this and can tell just how hard I am trying to get my foot in the door of this exciting field.</p>
+                <img src={myPic} alt="My Pic Should Be Here..." />
+                <Card>
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">My Resume</a>
+                </Card>
             </Card>
             <Card>
                 
