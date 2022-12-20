@@ -17,8 +17,8 @@
 .titleCard > h1{
     font-size: 5em;
     color: aqua;
-    text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
+    text-shadow: 0 1px 0 rgb(252, 2, 2), 
+               0 2px 0 #d608dd,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
                0 5px 0 #aaa,
