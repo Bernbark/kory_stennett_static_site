@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kory_stennett_static_site/static/css/main.cf7f058c.css",
+    "main.css": "/kory_stennett_static_site/static/css/main.f4cb0d76.css",
     "main.js": "/kory_stennett_static_site/static/js/main.503bd06e.js",
     "static/media/roadsplitter mag.jpg": "/kory_stennett_static_site/static/media/roadsplitter mag.bf4a966ba359c5be1b9a.jpg",
     "static/media/blood_acolyte.png": "/kory_stennett_static_site/static/media/blood_acolyte.1210b4b35279579f0333.png",
@@ -13,11 +13,11 @@
     "static/media/lightning.png": "/kory_stennett_static_site/static/media/lightning.a9a5de210d2e446239fb.png",
     "static/media/Card_Front.png": "/kory_stennett_static_site/static/media/Card_Front.4896657e086b68d996d9.png",
     "index.html": "/kory_stennett_static_site/index.html",
-    "main.cf7f058c.css.map": "/kory_stennett_static_site/static/css/main.cf7f058c.css.map",
+    "main.f4cb0d76.css.map": "/kory_stennett_static_site/static/css/main.f4cb0d76.css.map",
     "main.503bd06e.js.map": "/kory_stennett_static_site/static/js/main.503bd06e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf7f058c.css",
+    "static/css/main.f4cb0d76.css",
     "static/js/main.503bd06e.js"
   ]
 }
