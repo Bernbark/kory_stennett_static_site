@@ -2,17 +2,27 @@
     background-color: rgb(158, 18, 163);
     border-radius: 6px;
     box-shadow: 0 6px 12px rgb(0, 0, 0);
-    border: 1rem black;
+    border: 2rem black;
+    flex-grow: 1;
+    font-size: 2em;
+    flex-direction: column;
+    color: white;
+    text-align: center;
     
+    margin: auto;
   }
 
 .linkSlot > div{
-  transition: .6s;
+  
+  transition: .3s;
 }
 
+
+
 .linkSlot > div:hover{
+    color: white;
     background-color: rgb(191, 16, 197);
-    border-radius: 12px;
+    
     box-shadow: 0 2px 8px rgb(78, 45, 45);
     border: 1rem rgb(231, 100, 203);
     transform: scale(1.5);

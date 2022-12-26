@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import css from './MainNavigation.module.css';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 import LinkSlot from '../UI/LinkSlot';
+import GlitchButton from '../UI/GlitchButton';
+
 
 
 function MainNavigation() {
@@ -18,7 +20,10 @@ function MainNavigation() {
     return(
         <div>
             {isDesktopOrLaptop && <header className={css.header}>
-                <div className={css.logo}>Portfolio</div>
+                <GlitchButton>
+                    
+                    Portfolio
+                </GlitchButton>
                 <nav>
                     <ul>
                         <li>
@@ -58,7 +63,9 @@ function MainNavigation() {
             </header>}
             
             {isSmall && <header className={css.headerPortrait}>
-                <div className={css.logoPortrait}>Portfolio</div>
+                <GlitchButton>
+                    Portfolio
+                </GlitchButton>
                 <nav>
                     <ul>
                         <li>
@@ -97,7 +104,9 @@ function MainNavigation() {
                 </nav>
             </header>}
             {isTiny && <header className={css.headerTiny}>
-                <div className={css.logoTiny}>Portfolio</div>
+                <GlitchButton>
+                    Portfolio
+                </GlitchButton>
                 <nav>
                     <ul>
                         <li>
@@ -136,7 +145,9 @@ function MainNavigation() {
                 </nav>
             </header>}
             {isMiniscule && <header className={css.headerMini}>
-                <div className={css.logoMini}>Portfolio</div>
+                <GlitchButton>
+                    Portfolio
+                </GlitchButton>
                 <nav>
                     <ul>
                         <li>

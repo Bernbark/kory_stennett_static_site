@@ -11,7 +11,7 @@
 
 .imageSlot > img{
     
-    box-shadow: 0 4px 10px rgba(126, 4, 105, 0.521);
+    
     max-width: 600px;
     max-height: 600px;
     margin: 1%;
@@ -31,5 +31,10 @@
   
   .imageSlot > img:hover{
     transform:scale(1.4);
+  }
+
+  .large{
+    min-height:600px;
+    min-width: 1200px;
   }
   

@@ -2,8 +2,7 @@
     background-color: rgb(76, 135, 184);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(126, 4, 105, 0.521);
-    min-width: 600px;
-    min-height: 600px;
+    
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -80,4 +79,8 @@
 .card > a:hover{
   color:white;
   transform:scale(1.1);
+}
+
+.card:hover{
+  background-color: rgb(68, 121, 165);
 }

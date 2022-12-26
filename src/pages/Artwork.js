@@ -30,13 +30,13 @@ function ArtworkPage(){
     const isMiniscule = useMediaQuery({ query: '(min-width: 236px) and (max-width: 326px)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
     return <div>
-        
+        <TitleCard>
+            <h1>
+                The Gallery
+            </h1>
+        </TitleCard>
         <Card>
-            <TitleCard>
-                <h1>
-                    The Gallery
-                </h1>
-            </TitleCard>
+            
             
            
              {isBigScreen &&
