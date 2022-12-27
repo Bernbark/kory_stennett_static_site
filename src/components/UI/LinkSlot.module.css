@@ -9,7 +9,9 @@
     color: white;
     text-align: center;
     
+    padding:10px;
     margin: auto;
+    overflow-x: hidden;
   }
 
 .linkSlot > div{
@@ -25,5 +27,5 @@
     
     box-shadow: 0 2px 8px rgb(78, 45, 45);
     border: 1rem rgb(231, 100, 203);
-    transform: scale(1.5);
+    transform: scale(1.1);
 }

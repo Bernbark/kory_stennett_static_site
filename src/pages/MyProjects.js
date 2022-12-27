@@ -48,10 +48,9 @@ function ProjectsPage(){
             </TitleCard>
             <TwoFrameCard>
                 <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
-                <Card><h2>Streamer Simulator Idle</h2><br></br><h3>DOES NOT CURRENTLY SAVE IN WEBGL!!! <br></br>This game definitely has some porting issues, I'm working on it! Hit Tab to open
-                    and close the Chat and Stats windows. It's an idle game where you are a streamer who is
-                    trying to earn enough money and fame to get back to the Intergalactic War with the Stats
-                    and money they earned during their time on Earth.</h3></Card>
+                <Card><h2>Poopy Gibson</h2><br></br><h3>Just a silly platformer<br></br>This game definitely has some porting issues, I'm working on it! This is the
+                first game I ever made in Unity, starting with a Brackeys tutorial on Platformers. I learned a lot of the core concepts of game dev and Unity from this 
+                project by combining tutorials from many great teachers like Brackeys, CodeMonkey, and Jason Weimann.</h3></Card>
             </TwoFrameCard>
             
             <section>
