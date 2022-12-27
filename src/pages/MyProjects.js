@@ -16,6 +16,7 @@ function ProjectsPage(){
       const [devicePixelRatio, setDevicePixelRatio] = useState(
     window.devicePixelRatio
   );
+  const { isLoaded } = useUnityContext();
       const handleChangePixelRatio = useCallback(
         function () {
           // A function which will update the device pixel ratio of the Unity
@@ -46,7 +47,7 @@ function ProjectsPage(){
                 </h1>
             </TitleCard>
             <TwoFrameCard>
-                <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800 }} devicePixelRatio={devicePixelRatio}/>
+                <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
                 <Card><h2>Streamer Simulator Idle</h2><br></br><h3>DOES NOT CURRENTLY SAVE IN WEBGL!!! <br></br>This game definitely has some porting issues, I'm working on it! Hit Tab to open
                     and close the Chat and Stats windows. It's an idle game where you are a streamer who is
                     trying to earn enough money and fame to get back to the Intergalactic War with the Stats
