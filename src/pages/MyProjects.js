@@ -7,10 +7,10 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 function ProjectsPage(){
     const { unityProvider } = useUnityContext({
-        loaderUrl: "kory_stennett_static_site/UnityBuilds/WebGl.loader.js",
-        dataUrl: "kory_stennett_static_site/UnityBuilds/WebGl.data",
-        frameworkUrl: "kory_stennett_static_site/UnityBuilds/WebGl.framework.js",
-        codeUrl: "kory_stennett_static_site/UnityBuilds/WebGl.wasm",
+        loaderUrl: "kory_stennett_static_site/UnityBuilds/WebGL.loader.js",
+        dataUrl: "kory_stennett_static_site/UnityBuilds/WebGL.data",
+        frameworkUrl: "kory_stennett_static_site/UnityBuilds/WebGL.framework.js",
+        codeUrl: "kory_stennett_static_site/UnityBuilds/WebGL.wasm",
       });
 
       const [devicePixelRatio, setDevicePixelRatio] = useState(
@@ -50,7 +50,7 @@ function ProjectsPage(){
                 <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
                 <Card><h2>Poopy Gibson</h2><br></br><h3>Just a silly platformer<br></br>This game definitely has some porting issues, I'm working on it! This is the
                 first game I ever made in Unity, starting with a Brackeys tutorial on Platformers. I learned a lot of the core concepts of game dev and Unity from this 
-                project by combining tutorials from many great teachers like Brackeys, CodeMonkey, and Jason Weimann.</h3></Card>
+                project by combining tutorials from many great teachers like Brackeys, CodeMonkey, and Jason Weimann.a</h3></Card>
             </TwoFrameCard>
             
             <section>
