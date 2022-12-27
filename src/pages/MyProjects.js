@@ -47,7 +47,7 @@ function ProjectsPage(){
             </TitleCard>
             <TwoFrameCard>
                 <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800 }} devicePixelRatio={devicePixelRatio}/>
-                <Card><h2>Streamer Simulator Idle</h2><br></br><h3>This game definitely has some porting issues, I'm working on it! Hit Tab to open
+                <Card><h2>Streamer Simulator Idle</h2><br></br><h3>DOES NOT CURRENTLY SAVE IN WEBGL!!! <br></br>This game definitely has some porting issues, I'm working on it! Hit Tab to open
                     and close the Chat and Stats windows. It's an idle game where you are a streamer who is
                     trying to earn enough money and fame to get back to the Intergalactic War with the Stats
                     and money they earned during their time on Earth.</h3></Card>
