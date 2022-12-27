@@ -37,4 +37,14 @@
     min-height:600px;
     min-width: 1200px;
   }
+
+  .medium{
+    min-height:300px;
+    min-width: 600px;
+  }
+
+  .tiny{
+    max-width: 600px;
+    
+  }
   

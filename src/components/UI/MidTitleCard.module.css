@@ -1,26 +1,26 @@
-.titleCard {
-    background-color: rgb(158, 18, 163);
+.midTitleCard {
+    background-color: rgb(0, 171, 238);
     border-radius: 6px;
-    box-shadow:1px 1px 8px 10px rgba(126, 4, 105, 0.521);
+    box-shadow:1px 1px 8px 10px rgba(1, 247, 255, 0.521);
     
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     text-align: center;
-    margin:1%;
+    margin:3%;
     padding: 0%;
     color: white;
     flex-direction: row;
     justify-content: center;
   }
 
-.titleCard > h1{
+.midTitleCard > h1{
     font-size: 5em;
-    color: aqua;
-    text-shadow: 0 1px 0 rgb(252, 2, 2), 
-               0 2px 0 #d608dd,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 rgb(40, 2, 252), 
+               0 2px 0 #080cdd,
+               0 3px 0 rgb(17, 127, 190),
+               0 4px 0 #039ca7a2,
                0 5px 0 #aaa,
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
