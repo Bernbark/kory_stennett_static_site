@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kory_stennett_static_site/static/css/main.d2d4f2b0.css",
-    "main.js": "/kory_stennett_static_site/static/js/main.808c23f5.js",
+    "main.css": "/kory_stennett_static_site/static/css/main.0a083835.css",
+    "main.js": "/kory_stennett_static_site/static/js/main.645a72f6.js",
     "static/media/roadsplitter mag.jpg": "/kory_stennett_static_site/static/media/roadsplitter mag.bf4a966ba359c5be1b9a.jpg",
     "static/media/blood_acolyte.png": "/kory_stennett_static_site/static/media/blood_acolyte.1210b4b35279579f0333.png",
     "static/media/Relic_of_OW.PNG": "/kory_stennett_static_site/static/media/Relic_of_OW.5ab104388d2ff84bf90e.PNG",
@@ -9,16 +9,17 @@
     "static/media/My_Pic.jpg": "/kory_stennett_static_site/static/media/My_Pic.bc3f10d308937204e4bb.jpg",
     "static/media/Card_Back.png": "/kory_stennett_static_site/static/media/Card_Back.11939c65819c5f4980ed.png",
     "static/media/beam_4.png": "/kory_stennett_static_site/static/media/beam_4.4fb62f6df850c7288421.png",
+    "static/media/me_and_the_boiz.jpg": "/kory_stennett_static_site/static/media/me_and_the_boiz.52c3aad23ca6e6cabd0d.jpg",
     "static/media/myfushy.JPG": "/kory_stennett_static_site/static/media/myfushy.2f37213eae8a8bde535f.JPG",
     "static/media/sunroof.jpg": "/kory_stennett_static_site/static/media/sunroof.531e87d48d617ec4f3f1.jpg",
     "static/media/lightning.png": "/kory_stennett_static_site/static/media/lightning.a9a5de210d2e446239fb.png",
     "static/media/Card_Front.png": "/kory_stennett_static_site/static/media/Card_Front.4896657e086b68d996d9.png",
     "index.html": "/kory_stennett_static_site/index.html",
-    "main.d2d4f2b0.css.map": "/kory_stennett_static_site/static/css/main.d2d4f2b0.css.map",
-    "main.808c23f5.js.map": "/kory_stennett_static_site/static/js/main.808c23f5.js.map"
+    "main.0a083835.css.map": "/kory_stennett_static_site/static/css/main.0a083835.css.map",
+    "main.645a72f6.js.map": "/kory_stennett_static_site/static/js/main.645a72f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2d4f2b0.css",
-    "static/js/main.808c23f5.js"
+    "static/css/main.0a083835.css",
+    "static/js/main.645a72f6.js"
   ]
 }
