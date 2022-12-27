@@ -70,9 +70,9 @@
 }
 
 .card > a{
-  margin: 20%;
+  margin: 2%;
   font-size: 8em;
-  flex-grow: 1;
+  
   transition: 1s;
 }
 
