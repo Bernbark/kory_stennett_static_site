@@ -34,9 +34,7 @@
   
 }
 
-.gallery{
-  image-rendering: pixelated;
-}
+
 
 .card > img:hover{
   transform:scale(1.4);
@@ -83,4 +81,10 @@
 
 .card:hover{
   background-color: rgb(68, 121, 165);
+}
+
+.flipCard {
+  margin: 1%;
+  background-color: rgb(243, 214, 47);
+  
 }

@@ -30,6 +30,14 @@
   }
   
   .imageSlot > img:hover{
+    
+  }
+
+  .gallery{
+    image-rendering: pixelated;
+  }
+
+  .imageSlot > .gallery:hover{
     transform:scale(1.4);
   }
 

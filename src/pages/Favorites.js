@@ -33,28 +33,28 @@ function FavoritesPage() {
                 
             </TitleCard>
             
-            <FlipCard backMessage={<Card>
-                <h2>Oh Overwatch...</h2>
-                <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
-                    but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
-                </h3>
-                <br></br>
-                <h3>To say that I like the game is an understatement. I have never played a game like this one before, my usual choice 
-                    of shooter being Call of Duty type games. I like the arcadey style of OW along with the variations in gameplay that 
-                    different hero abilities can bring.
-                </h3>
-            </Card>
-            
-                                    
-            }>
+            <Card>
                 
                 <MidTitleCard><h1>Overwatch Love: September, 2022</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
-                    <Card>
-                        <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
+                    <FlipCard backMessage={<Card>
+                        <h2>Oh Overwatch...</h2>
+                        <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
+                            but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
+                        </h3>
+                        <br></br>
+                        <h3>To say that I like the game is an understatement. I have never played a game like this one before, my usual choice 
+                            of shooter being Call of Duty type games. I like the arcadey style of OW along with the variations in gameplay that 
+                            different hero abilities can bring.
+                        </h3>
                     </Card>
+                    
+                                            
+                    }>
+                        <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
+                    </FlipCard>
                     <Card>
                         <ImageSlot>
                             <img className={imageStyles.large} src={relic} alt="My Pic Should Be Here..." />
@@ -63,9 +63,22 @@ function FavoritesPage() {
                 </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <Card>
-                                    <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
-                                </Card>
+                                <FlipCard backMessage={<Card>
+                        <h2>Oh Overwatch...</h2>
+                        <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
+                            but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
+                        </h3>
+                        <br></br>
+                        <h3>To say that I like the game is an understatement. I have never played a game like this one before, my usual choice 
+                            of shooter being Call of Duty type games. I like the arcadey style of OW along with the variations in gameplay that 
+                            different hero abilities can bring.
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
+                    </FlipCard>
                                 <Card>
                                     <ImageSlot>
                                         <img className={imageStyles.large} src={relic} alt="My Pic Should Be Here..." />
@@ -75,9 +88,22 @@ function FavoritesPage() {
                 }
                 {isMiniscule && 
                             <div>
-                                <Card>
-                                    <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
-                                </Card>
+                                <FlipCard backMessage={<Card>
+                        <h2>Oh Overwatch...</h2>
+                        <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
+                            but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
+                        </h3>
+                        <br></br>
+                        <h3>To say that I like the game is an understatement. I have never played a game like this one before, my usual choice 
+                            of shooter being Call of Duty type games. I like the arcadey style of OW along with the variations in gameplay that 
+                            different hero abilities can bring.
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
+                    </FlipCard>
                                 <Card>
                                     <ImageSlot>
                                         <img className={imageStyles.medium} src={relic} alt="My Pic Should Be Here..." />
@@ -87,9 +113,22 @@ function FavoritesPage() {
                 }
                 {isTiny && 
                             <div>
-                                <Card>
-                                    <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
-                                </Card>
+                                <FlipCard backMessage={<Card>
+                        <h2>Oh Overwatch...</h2>
+                        <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
+                            but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
+                        </h3>
+                        <br></br>
+                        <h3>To say that I like the game is an understatement. I have never played a game like this one before, my usual choice 
+                            of shooter being Call of Duty type games. I like the arcadey style of OW along with the variations in gameplay that 
+                            different hero abilities can bring.
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
+                    </FlipCard>
                                 <Card>
                                     <ImageSlot>
                                         <img className={imageStyles.tiny} src={relic} alt="My Pic Should Be Here..." />
@@ -98,26 +137,26 @@ function FavoritesPage() {
                             </div>
                 }
 
-            </FlipCard>
-            <FlipCard backMessage={<Card>
-                <h2>My Friends!</h2>
-                <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
-                </h3>
-                <br></br>
-                <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                    support, they were always there to help me. Thank you my friends!
-                </h3>
             </Card>
-            
-                                    
-            }>
+            <Card>
                 <MidTitleCard><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
-                    <Card>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
                     </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
                     <Card>
                         <ImageSlot>
                             <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
@@ -126,9 +165,20 @@ function FavoritesPage() {
                 </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <Card>
-                                    <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                                </Card>
+                                <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
                                 <Card>
                                     <ImageSlot>
                                         <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
@@ -138,9 +188,20 @@ function FavoritesPage() {
                 }
                 {isMiniscule && 
                             <div>
-                                <Card>
-                                    <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                                </Card>
+                                <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
                                 <Card>
                                     <ImageSlot>
                                         <img className={imageStyles.medium} src={theBoiz} alt="My Pic Should Be Here..." />
@@ -150,9 +211,20 @@ function FavoritesPage() {
                 }
                 {isTiny && 
                             <div>
-                                <Card>
-                                    <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                                </Card>
+                                <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
                                 <Card>
                                     <ImageSlot>
                                         <img className={imageStyles.tiny} src={theBoiz} alt="My Pic Should Be Here..." />
@@ -161,7 +233,7 @@ function FavoritesPage() {
                             </div>
                 }
 
-            </FlipCard>       
+            </Card>       
         </div>
     );
 }

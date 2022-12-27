@@ -19,7 +19,7 @@ function HomePage(){
                             <h2>Welcome to my website!</h2>
                             <p>Let's talk about why this website exists.<br></br></p>
                             <p>This is a place to post my projects and thoughts to the internet. It exists also as a 
-                                place for me to practice programming practices, so in a way this is an experimental playground as well.
+                                place for me to practice programming techniques, so in a way this is an experimental playground as well.
                             </p>
                             
                             
