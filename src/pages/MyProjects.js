@@ -3,19 +3,28 @@ import Card from '../components/UI/Card';
 import TwoFrameCard from '../components/UI/TwoFrameCard';
 import LinkSlot from '../components/UI/LinkSlot';
 import Warning from '../components/UI/Warning';
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, Component } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
-function ProjectsPage(){
-    const { unityProvider } = useUnityContext({
+import { withRouter } from 'react-router'
+function ProjectsPage (props){
+    
+    const { unityProvider, unload } = useUnityContext({
         loaderUrl: "kory_stennett_static_site/UnityBuilds/WebGL.loader.js",
         dataUrl: "kory_stennett_static_site/UnityBuilds/WebGL.data",
         frameworkUrl: "kory_stennett_static_site/UnityBuilds/WebGL.framework.js",
         codeUrl: "kory_stennett_static_site/UnityBuilds/WebGL.wasm",
+        webglContextAttributes: {
+            preserveDrawingBuffer: true,
+          },
       });
 
       const [devicePixelRatio, setDevicePixelRatio] = useState(
     window.devicePixelRatio
   );
+  useEffect(()=>{
+    return ()=> unload
+    },[])
+    //<Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
   const { isLoaded } = useUnityContext();
       const handleChangePixelRatio = useCallback(
         function () {
@@ -47,10 +56,8 @@ function ProjectsPage(){
                 </h1>
             </TitleCard>
             <TwoFrameCard>
-                <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
-                <Card><h2>Poopy Gibson</h2><br></br><h3>Just a silly platformer<br></br>This game definitely has some porting issues, I'm working on it! This is the
-                first game I ever made in Unity, starting with a Brackeys tutorial on Platformers. I learned a lot of the core concepts of game dev and Unity from this 
-                project by combining tutorials from many great teachers like Brackeys, CodeMonkey, and Jason Weimann.a</h3></Card>
+                
+                <Card><h2>Placeholder Title</h2><br></br><h3>Can't Decide Which Game To Post<br></br></h3></Card>
             </TwoFrameCard>
             
             <section>
