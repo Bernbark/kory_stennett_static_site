@@ -9,10 +9,10 @@ import { withRouter } from 'react-router'
 function ProjectsPage (props){
     
     const { unityProvider, unload } = useUnityContext({
-        loaderUrl: "kory_stennett_static_site/UnityBuilds/WebGL.loader.js",
-        dataUrl: "kory_stennett_static_site/UnityBuilds/WebGL.data",
-        frameworkUrl: "kory_stennett_static_site/UnityBuilds/WebGL.framework.js",
-        codeUrl: "kory_stennett_static_site/UnityBuilds/WebGL.wasm",
+        loaderUrl: "kory_stennett_static_site/UnityBuilds/Build.loader.js",
+        dataUrl: "kory_stennett_static_site/UnityBuilds/Build.data",
+        frameworkUrl: "kory_stennett_static_site/UnityBuilds/Build.framework.js",
+        codeUrl: "kory_stennett_static_site/UnityBuilds/Build.wasm",
         webglContextAttributes: {
             preserveDrawingBuffer: true,
           },
@@ -24,7 +24,7 @@ function ProjectsPage (props){
   useEffect(()=>{
     return ()=> unload
     },[])
-    //<Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
+    //
   const { isLoaded } = useUnityContext();
       const handleChangePixelRatio = useCallback(
         function () {
@@ -56,8 +56,12 @@ function ProjectsPage (props){
                 </h1>
             </TitleCard>
             <TwoFrameCard>
-                
-                <Card><h2>Placeholder Title</h2><br></br><h3>Can't Decide Which Game To Post<br></br></h3></Card>
+              <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
+                <Card><h2>Pinball Roguelite</h2><br></br><h3>***NOTE***<br></br>This game will continue running while you are on the site, and this is not intentional. Working on a fix, sorry!
+                in the meantime, you'll have to do a site refresh to get it to stop running in the background. 
+                <br></br><br></br>This is a really rough first draft of a pinball styled roguelite game.<br></br>It's made in 3D but is topdown which
+                allows for some more fluid movement using Rigidbody.AddForce() and allowing the player to speed up or slow down by adding velocity to its rigidbody, instead of
+                the 2D method, where the objects are essentially "teleporting" from one pixel to the next.</h3></Card>
             </TwoFrameCard>
             
             <section>
