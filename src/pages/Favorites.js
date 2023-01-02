@@ -26,6 +26,17 @@ function FavoritesPage() {
     const isMiniscule = useMediaQuery({ query: '(min-width: 677px) and (max-width: 1313px)' })
     const isTiny = useMediaQuery({ query: '(max-width: 676px)' })
 
+    const mikeyMessage = { front: "My dog Michael! What a good dog! There aren't many things I'd die for but he is one of them.",
+                            title: "This awesome guy",
+                            message1: "I love this dog and I would definitely do anything in my power to protect him.",
+                            message2:"I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality. \
+                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when \
+                            he turns his nose up at steak!"}
+    const friendMessage = { front: "I found a dope group of friends who supported me throughout my programming degree.",
+                            title: "My Friends!",
+                            message1: "I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.",
+                            message2:"My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or \
+                            support, they were always there to help me. Thank you my friends!"}
 
     return (<div>
             <TitleCard>
@@ -41,19 +52,17 @@ function FavoritesPage() {
                 <TwoFrameCard>
                     
                     <FlipCard backMessage={<Card className={flipStyles.flipCard}>
-                        <h2>This awesome guy</h2>
-                        <h3>I love this dog and I would definitely do anything in my power to protect him.
+                        <h2>{mikeyMessage.title}</h2>
+                        <h3>{mikeyMessage.message1}
                         </h3>
                         <br></br>
-                        <h3>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
-                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
-                            he turns his nose up at steak!
+                        <h3>{mikeyMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                        <h2>{mikeyMessage.front}</h2>
                     </FlipCard>
                     <Card>
                         <ImageSlot>
@@ -64,19 +73,17 @@ function FavoritesPage() {
                 {isSmall && 
                             <div>
                                 <FlipCard backMessage={<Card>
-                                    <h2>This awesome guy</h2>
-                        <h3>I love this dog and I would definitely do anything in my power to protect him.
+                                    <h2>{mikeyMessage.title}</h2>
+                        <h3>{mikeyMessage.message1}
                         </h3>
                         <br></br>
-                        <h3>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
-                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
-                            he turns his nose up at steak!
+                        <h3>{mikeyMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                        <h2>{mikeyMessage.front}</h2>
                     </FlipCard>
                                 <Card>
                                     <ImageSlot>
@@ -88,19 +95,18 @@ function FavoritesPage() {
                 {isMiniscule && 
                             <div>
                                 <FlipCard backMessage={<Card>
-                                    <h2>This awesome guy</h2>
-                        <h3>I love this dog and I would definitely do anything in my power to protect him.
+                                    
+                                    <h2>{mikeyMessage.title}</h2>
+                        <h3>{mikeyMessage.message1}
                         </h3>
                         <br></br>
-                        <h3>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
-                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
-                            he turns his nose up at steak!
+                        <h3>{mikeyMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                        <h2>{mikeyMessage.front}</h2>
                     </FlipCard>
                                 <Card>
                                     <ImageSlot>
@@ -112,19 +118,17 @@ function FavoritesPage() {
                 {isTiny && 
                             <div>
                                 <FlipCard backMessage={<Card>
-                                    <h2 style={{ fontSize:'1.5rem' }}>This awesome guy</h2>
-                        <h3 style={{ fontSize:'1rem' }}>I love this dog and I would definitely do anything in my power to protect him.
+                                    <h2 style={{ fontSize:'1.5rem' }}>{mikeyMessage.title}</h2>
+                        <h3 style={{ fontSize:'1rem' }}>{mikeyMessage.message1}
                         </h3>
                         <br></br>
-                        <h3 style={{ fontSize:'1rem' }}>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
-                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
-                            he turns his nose up at steak!
+                        <h3 style={{ fontSize:'1rem' }}>{mikeyMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2 style={{ fontSize:'1.6rem' }}>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                        <h2 style={{ fontSize:'1.6rem' }}>{mikeyMessage.front}</h2>
                     </FlipCard>
                                 <Card>
                                     <ImageSlot>
@@ -141,18 +145,17 @@ function FavoritesPage() {
                 <TwoFrameCard>
                     
                     <FlipCard backMessage={<Card>
-                        <h2>My Friends!</h2>
-                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        <h2>{friendMessage.title}</h2>
+                        <h3>{friendMessage.message1}
                         </h3>
                         <br></br>
-                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
+                        <h3>{friendMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                        <h2>{friendMessage.front}</h2>
                     </FlipCard>
                     <Card>
                         <ImageSlot>
@@ -163,18 +166,17 @@ function FavoritesPage() {
                 {isSmall && 
                             <div>
                                 <FlipCard backMessage={<Card>
-                        <h2>My Friends!</h2>
-                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                                    <h2>{friendMessage.title}</h2>
+                        <h3>{friendMessage.message1}
                         </h3>
                         <br></br>
-                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
+                        <h3>{friendMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                        <h2>{friendMessage.front}</h2>
                     </FlipCard>
                                 <Card>
                                     <ImageSlot>
@@ -186,18 +188,17 @@ function FavoritesPage() {
                 {isMiniscule && 
                             <div>
                                 <FlipCard backMessage={<Card>
-                        <h2>My Friends!</h2>
-                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                                    <h2>{friendMessage.title}</h2>
+                        <h3>{friendMessage.message1}
                         </h3>
                         <br></br>
-                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
+                        <h3>{friendMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                        <h2>{friendMessage.front}</h2>
                     </FlipCard>
                                 <Card>
                                     <ImageSlot>
@@ -209,18 +210,17 @@ function FavoritesPage() {
                 {isTiny && 
                             <div>
                                 <FlipCard backMessage={<Card>
-                        <h2 style={{ fontSize:'1.5rem' }}>My Friends!</h2>
-                        <h3 style={{ fontSize:'1rem' }}>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        <h2 style={{ fontSize:'1.5rem' }}>{friendMessage.title}</h2>
+                        <h3 style={{ fontSize:'1rem' }}>{friendMessage.message1}
                         </h3>
                         <br></br>
-                        <h3 style={{ fontSize:'1rem' }}>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
+                        <h3 style={{ fontSize:'1rem' }}>{friendMessage.message2}
                         </h3>
                     </Card>
                     
                                             
                     }>
-                        <h2 style={{ fontSize:'1.6rem' }}>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                        <h2 style={{ fontSize:'1.6rem' }}>{friendMessage.front}</h2>
                     </FlipCard>
                                 <Card>
                                     <ImageSlot>
