@@ -1,0 +1,13 @@
+.flipCard {
+    margin: 1%;
+    background-color: rgb(243, 214, 47);
+    
+  }
+
+.flipCard > h2{
+    font-size:1rem;
+}
+
+.flipCard > h3{
+    font-size:2rem;
+}

@@ -26,7 +26,7 @@ function ArtworkPage(){
     const isBigScreen = useMediaQuery({ query: '(min-width: 1772px)' })
     //onst isTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
     const isLessBig = useMediaQuery({ query: '(min-width: 1378px) and (max-width: 1771px)' })
-    const isSmall = useMediaQuery({ query: '(min-width: 327px) and (max-width: 1377px)' })
+    const isSmall = useMediaQuery({ query: '(min-width: 200px) and (max-width: 1377px)' })
     const isMiniscule = useMediaQuery({ query: '(min-width: 236px) and (max-width: 326px)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
     return <div>

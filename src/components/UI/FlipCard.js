@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import Card from './Card';
-import css from './Card.module.css';
+import css from './FlipCard.module.css';
 const FlipCard = (props) => {
     const [isFlipped, setIsFlipped] = useState(false);
 
