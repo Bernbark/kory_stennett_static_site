@@ -3,6 +3,7 @@ import ImageSlot from '../components/UI/ImageSlot';
 import TitleCard from '../components/UI/TitleCard';
 import TwoFrameCard from '../components/UI/TwoFrameCard';
 import relic from '../Images/Relic_of_OW.PNG';
+import mikey from '../Images/mikey.PNG';
 import theBoiz from '../Images/me_and_the_boiz.jpg';
 import imageStyles from '../components/UI/ImageSlot.module.css'
 import MidTitleCard from '../components/UI/MidTitleCard';
@@ -33,7 +34,203 @@ function FavoritesPage() {
                 </h1>
                 
             </TitleCard>
-            
+            <Card>
+                
+                <MidTitleCard><h1>Mikeeeyyy!</h1></MidTitleCard>
+                {isDesktopOrLaptop && 
+                <TwoFrameCard>
+                    
+                    <FlipCard backMessage={<Card className={flipStyles.flipCard}>
+                        <h2>This awesome guy</h2>
+                        <h3>I love this dog and I would definitely do anything in my power to protect him.
+                        </h3>
+                        <br></br>
+                        <h3>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
+                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
+                            he turns his nose up at steak!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                    </FlipCard>
+                    <Card>
+                        <ImageSlot>
+                            <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
+                        </ImageSlot>
+                    </Card>
+                </TwoFrameCard>}
+                {isSmall && 
+                            <div>
+                                <FlipCard backMessage={<Card>
+                                    <h2>This awesome guy</h2>
+                        <h3>I love this dog and I would definitely do anything in my power to protect him.
+                        </h3>
+                        <br></br>
+                        <h3>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
+                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
+                            he turns his nose up at steak!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                    </FlipCard>
+                                <Card>
+                                    <ImageSlot>
+                                        <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
+                                    </ImageSlot>
+                                </Card>
+                            </div>
+                }
+                {isMiniscule && 
+                            <div>
+                                <FlipCard backMessage={<Card>
+                                    <h2>This awesome guy</h2>
+                        <h3>I love this dog and I would definitely do anything in my power to protect him.
+                        </h3>
+                        <br></br>
+                        <h3>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
+                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
+                            he turns his nose up at steak!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                    </FlipCard>
+                                <Card>
+                                    <ImageSlot>
+                                        <img className={imageStyles.medium} src={mikey} alt="My Pic Should Be Here..." />
+                                    </ImageSlot>
+                                </Card>
+                            </div>
+                }
+                {isTiny && 
+                            <div>
+                                <FlipCard backMessage={<Card>
+                                    <h2 style={{ fontSize:'1.5rem' }}>This awesome guy</h2>
+                        <h3 style={{ fontSize:'1rem' }}>I love this dog and I would definitely do anything in my power to protect him.
+                        </h3>
+                        <br></br>
+                        <h3 style={{ fontSize:'1rem' }}>I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality.
+                            While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when
+                            he turns his nose up at steak!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2 style={{ fontSize:'1.6rem' }}>My dog Michael! What a good boy! There aren't many things I'd die for but he is one of them.</h2>
+                    </FlipCard>
+                                <Card>
+                                    <ImageSlot>
+                                        <img className={imageStyles.tiny} src={mikey} alt="My Pic Should Be Here..." />
+                                    </ImageSlot>
+                                </Card>
+                            </div>
+                }
+
+            </Card>
+            <Card>
+                <MidTitleCard><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
+                {isDesktopOrLaptop && 
+                <TwoFrameCard>
+                    
+                    <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
+                    <Card>
+                        <ImageSlot>
+                            <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
+                        </ImageSlot>
+                    </Card>
+                </TwoFrameCard>}
+                {isSmall && 
+                            <div>
+                                <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
+                                <Card>
+                                    <ImageSlot>
+                                        <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
+                                    </ImageSlot>
+                                </Card>
+                            </div>
+                }
+                {isMiniscule && 
+                            <div>
+                                <FlipCard backMessage={<Card>
+                        <h2>My Friends!</h2>
+                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
+                                <Card>
+                                    <ImageSlot>
+                                        <img className={imageStyles.medium} src={theBoiz} alt="My Pic Should Be Here..." />
+                                    </ImageSlot>
+                                </Card>
+                            </div>
+                }
+                {isTiny && 
+                            <div>
+                                <FlipCard backMessage={<Card>
+                        <h2 style={{ fontSize:'1.5rem' }}>My Friends!</h2>
+                        <h3 style={{ fontSize:'1rem' }}>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
+                        </h3>
+                        <br></br>
+                        <h3 style={{ fontSize:'1rem' }}>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
+                            support, they were always there to help me. Thank you my friends!
+                        </h3>
+                    </Card>
+                    
+                                            
+                    }>
+                        <h2 style={{ fontSize:'1.6rem' }}>I found a dope group of friends who supported me throughout my programming degree.</h2>
+                    </FlipCard>
+                                <Card>
+                                    <ImageSlot>
+                                        <img className={imageStyles.tiny} src={theBoiz} alt="My Pic Should Be Here..." />
+                                    </ImageSlot>
+                                </Card>
+                            </div>
+                }
+
+            </Card>
             <Card>
                 
                 <MidTitleCard><h1>Overwatch Love: September, 2022</h1></MidTitleCard>
@@ -138,103 +335,7 @@ function FavoritesPage() {
                             </div>
                 }
 
-            </Card>
-            <Card>
-                <MidTitleCard><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
-                {isDesktopOrLaptop && 
-                <TwoFrameCard>
-                    
-                    <FlipCard backMessage={<Card>
-                        <h2>My Friends!</h2>
-                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
-                        </h3>
-                        <br></br>
-                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
-                        </h3>
-                    </Card>
-                    
-                                            
-                    }>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                    </FlipCard>
-                    <Card>
-                        <ImageSlot>
-                            <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
-                        </ImageSlot>
-                    </Card>
-                </TwoFrameCard>}
-                {isSmall && 
-                            <div>
-                                <FlipCard backMessage={<Card>
-                        <h2>My Friends!</h2>
-                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
-                        </h3>
-                        <br></br>
-                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
-                        </h3>
-                    </Card>
-                    
-                                            
-                    }>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                    </FlipCard>
-                                <Card>
-                                    <ImageSlot>
-                                        <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
-                                    </ImageSlot>
-                                </Card>
-                            </div>
-                }
-                {isMiniscule && 
-                            <div>
-                                <FlipCard backMessage={<Card>
-                        <h2>My Friends!</h2>
-                        <h3>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
-                        </h3>
-                        <br></br>
-                        <h3>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
-                        </h3>
-                    </Card>
-                    
-                                            
-                    }>
-                        <h2>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                    </FlipCard>
-                                <Card>
-                                    <ImageSlot>
-                                        <img className={imageStyles.medium} src={theBoiz} alt="My Pic Should Be Here..." />
-                                    </ImageSlot>
-                                </Card>
-                            </div>
-                }
-                {isTiny && 
-                            <div>
-                                <FlipCard backMessage={<Card>
-                        <h2 style={{ fontSize:'1.5rem' }}>My Friends!</h2>
-                        <h3 style={{ fontSize:'1rem' }}>I have to thank them for being patient with me as I zoned out in Discord chats while focusing on studies or programming for these last three years.
-                        </h3>
-                        <br></br>
-                        <h3 style={{ fontSize:'1rem' }}>My friends made it so much easier to get through college, because when I was proud of something I had people to show it to, and when I needed advice or
-                            support, they were always there to help me. Thank you my friends!
-                        </h3>
-                    </Card>
-                    
-                                            
-                    }>
-                        <h2 style={{ fontSize:'1.6rem' }}>I found a dope group of friends who supported me throughout my programming degree.</h2>
-                    </FlipCard>
-                                <Card>
-                                    <ImageSlot>
-                                        <img className={imageStyles.tiny} src={theBoiz} alt="My Pic Should Be Here..." />
-                                    </ImageSlot>
-                                </Card>
-                            </div>
-                }
-
-            </Card>       
+            </Card>   
         </div>
     );
 }

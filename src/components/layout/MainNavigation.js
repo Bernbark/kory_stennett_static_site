@@ -37,7 +37,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot >
                                 <div >
-                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -45,8 +45,8 @@ function MainNavigation() {
                         </li>
                         <li>
                             <LinkSlot >
-                                <div>
-                                    <Link to='/new-meetup'>Projects</Link>
+                                <div> 
+                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -54,7 +54,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/favorites'>Faves</Link>
+                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -62,7 +62,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/artwork'>"Art"</Link>
+                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
@@ -79,7 +79,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -88,7 +88,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/new-meetup'>Projects</Link>
+                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -96,7 +96,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/favorites'>Faves</Link>
+                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -104,7 +104,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/artwork'>"Art"</Link>
+                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
@@ -120,7 +120,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -129,7 +129,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/new-meetup'>Projects</Link>
+                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -137,7 +137,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/favorites'>Faves</Link>
+                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -145,7 +145,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link to='/artwork'>"Art"</Link>
+                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
@@ -158,11 +158,12 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav>
                     <ul>
-                        <Card>
+                        <Card style={{backgroundColor:bgColors.Purple}}>
                         <li>
-                            <LinkSlot>
-                                <div style={{backgroundColor:bgColors.Purple}}>
-                                    <Link to='/kory_stennett_static_site'>Home</Link>
+                            
+                            <LinkSlot >
+                                <div >
+                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -170,26 +171,26 @@ function MainNavigation() {
                         </li>
                         <li>
                             <LinkSlot>
-                                <div>
-                                    <Link to='/new-meetup'>Projects</Link>
+                                <div > 
+                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
                         </li>
                         </Card>
-                        <Card>
+                        <Card style={{backgroundColor:bgColors.Purple}}>
                         <li >
-                            <LinkSlot style={{backgroundColor:bgColors.Purple}}>
-                                <div>
-                                    <Link to='/favorites'>Faves</Link>
+                            <LinkSlot >
+                                <div >
+                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
                         </li>
                         <li>
                             <LinkSlot>
-                                <div>
-                                    <Link to='/artwork'>"Art"</Link>
+                                <div >
+                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
