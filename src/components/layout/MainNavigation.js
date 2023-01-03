@@ -10,8 +10,12 @@ import Card from '../UI/Card';
 function MainNavigation() {
     
       function handleClickBack() {
-        // eslint-disable-next-line no-restricted-globals
-        location.reload(false);
+        
+        
+        if (!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
         console.log("Refreshed on click back");
         // Ready to navigate to another page.
       }
@@ -39,9 +43,9 @@ function MainNavigation() {
                     
                     Portfolio
                 </GlitchButton>
-                <nav onClick={handleClickBack}>
+                <nav >
                     <ul>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div >
                                     <Link  style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
@@ -50,7 +54,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div> 
                                     <Link  style={{color: "white"}} to='/projects'>Projects</Link>
@@ -58,7 +62,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}> 
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -66,7 +70,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
@@ -83,7 +87,7 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav>
                     <ul>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
@@ -92,7 +96,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/projects'>Projects</Link>
@@ -100,7 +104,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -108,7 +112,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
@@ -124,7 +128,7 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav>
                     <ul>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
@@ -133,7 +137,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/projects'>Projects</Link>
@@ -141,7 +145,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -149,7 +153,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
@@ -165,8 +169,8 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav>
                     <ul>
-                        <Card style={{backgroundColor:bgColors.Purple}}>
-                        <li>
+                        <Card>
+                        <li onClick={handleClickBack}>
                             
                             <LinkSlot >
                                 <div >
@@ -176,7 +180,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div > 
                                     <Link style={{color: "white"}} to='/projects'>Projects</Link>
@@ -185,8 +189,8 @@ function MainNavigation() {
                             </LinkSlot>
                         </li>
                         </Card>
-                        <Card style={{backgroundColor:bgColors.Purple}}>
-                        <li >
+                        <Card>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div >
                                     <Link style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -194,7 +198,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li>
+                        <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div >
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
