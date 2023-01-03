@@ -77,7 +77,7 @@ function ProjectsPage (props){
                     Projects
                 </h1>
             </TitleCard>
-            
+            <Card>
             <MidTitleCard><h1>
               Itch Titles
               </h1></MidTitleCard>
@@ -91,6 +91,8 @@ function ProjectsPage (props){
                 </LinkSlot>
               </Card>
             </TwoFrameCard>
+            </Card>
+            
             <section>
             
                     <Card>
