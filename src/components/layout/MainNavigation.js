@@ -9,9 +9,9 @@ import { useNavigate  } from 'react-router-dom';
 
 function MainNavigation() {
     const navigate = useNavigate;
-      function handleClickBack() {
+      function handleClickBack(url) {
         
-        
+        navigate(url)
         
         
         // Ready to navigate to another page.
@@ -42,7 +42,7 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav >
                     <ul>
-                        <li onClick={handleClickBack}>
+                        <li onClick={event => handleClickBack(event, '/kory_stennett_static_site')}>
                             <LinkSlot >
                                 <div >
                                     <Link reloadDocument style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
@@ -51,7 +51,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li onClick={handleClickBack}>
+                        <li onClick={event => handleClickBack(event, '/projects')}>
                             <LinkSlot >
                                 <div> 
                                     <Link reloadDocument style={{color: "white"}} to='/projects'>Projects</Link>
