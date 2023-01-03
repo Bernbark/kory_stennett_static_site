@@ -4,18 +4,16 @@ import { useMediaQuery } from 'react-responsive';
 import LinkSlot from '../UI/LinkSlot';
 import GlitchButton from '../UI/GlitchButton';
 import Card from '../UI/Card';
-
+import { useNavigate  } from 'react-router-dom';
 
 
 function MainNavigation() {
-    
+    const navigate = useNavigate;
       function handleClickBack() {
         
         
-        //setTimeout(()=>{
-            //window.location.reload(false);
-        //}, 500);
-        //console.log("Refreshed on click back");
+        
+        
         // Ready to navigate to another page.
       }
     var bgColors = { "Default": "#81b71a",
@@ -44,35 +42,35 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav >
                     <ul>
-                        <li onClick={() => {window.location.href="/kory_stennett_static_site"}}>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div >
-                                    <Link  style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
                             
                         </li>
-                        <li onClick={() => {window.location.href="/projects"}}>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div> 
-                                    <Link  style={{color: "white"}} to='/projects'>Projects</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={() => {window.location.href="/favorites"}}> 
+                        <li onClick={handleClickBack}> 
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={() => {window.location.href="/artwork"}}>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div>
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
@@ -86,10 +84,10 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav>
                     <ul>
-                        <li onClick={() => {window.location.href="/kory_stennett_static_site"}}>
+                        <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div>
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -98,7 +96,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -106,7 +104,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -114,7 +112,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
@@ -130,7 +128,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -139,7 +137,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -147,7 +145,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -155,7 +153,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
@@ -173,7 +171,7 @@ function MainNavigation() {
                             
                             <LinkSlot >
                                 <div >
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -182,7 +180,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div > 
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -192,7 +190,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div >
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/favorites'>Faves</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -200,7 +198,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div >
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    <Link reloadDocument style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
                             </LinkSlot>
                         </li>
