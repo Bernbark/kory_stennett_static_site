@@ -7,6 +7,7 @@ import React, { useState, useEffect, useCallback, Component } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { withRouter } from 'react-router'
 import { useMediaQuery } from 'react-responsive'
+import MidTitleCard from '../components/UI/MidTitleCard';
 function ProjectsPage (props){
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1782px)'
@@ -17,10 +18,10 @@ function ProjectsPage (props){
   const isSmall = useMediaQuery({ query: '(max-width: 1200px)' })
   
     const { unityProvider, unload, isLoaded, loadingProgression  } = useUnityContext({
-        loaderUrl: "kory_stennett_static_site/UnityBuilds/Build.loader.js",
-        dataUrl: "kory_stennett_static_site/UnityBuilds/Build.data",
-        frameworkUrl: "kory_stennett_static_site/UnityBuilds/Build.framework.js",
-        codeUrl: "kory_stennett_static_site/UnityBuilds/Build.wasm",
+        loaderUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.loader.js",
+        dataUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.data",
+        frameworkUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.framework.js",
+        codeUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.wasm",
         webglContextAttributes: {
             preserveDrawingBuffer: true,
           },
@@ -54,15 +55,8 @@ function ProjectsPage (props){
         [devicePixelRatio]
       );
 
-      
-    return <div >
-        <div>
-            <TitleCard>
-                <h1>
-                    Projects
-                </h1>
-            </TitleCard>
-            <TwoFrameCard>
+      /**
+       * <TwoFrameCard>
               {isBigScreen && <div>
                 <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
               <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800, visibility: isLoaded ? "visible" : "hidden" }} devicePixelRatio={devicePixelRatio}/>
@@ -74,7 +68,29 @@ function ProjectsPage (props){
                 allows for some more fluid movement using Rigidbody.AddForce() and allowing the player to speed up or slow down by adding velocity to its rigidbody, instead of
                 the 2D method, where the objects are essentially "teleporting" from one pixel to the next.</h3></Card>
             </TwoFrameCard>
+       */
+      
+    return <div >
+        <div>
+            <TitleCard>
+                <h1>
+                    Projects
+                </h1>
+            </TitleCard>
             
+            <MidTitleCard><h1>
+              Itch Titles
+              </h1></MidTitleCard>
+            <TwoFrameCard>
+              <Card>
+                <h3>Okay so these games aren't exactly polished, but I do have some playable prototypes up on Itch.io for anyone to check out!</h3>
+              </Card>
+              <Card>
+                <LinkSlot>
+                  <a href='https://bernbark.itch.io/'>Itch Collection</a>
+                </LinkSlot>
+              </Card>
+            </TwoFrameCard>
             <section>
             
                     <Card>

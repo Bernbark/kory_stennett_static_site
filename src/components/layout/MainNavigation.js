@@ -82,7 +82,7 @@ function MainNavigation() {
                         <li >
                             <LinkSlot >
                                 <div >
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/home'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -124,7 +124,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot >
                                 <div>
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/home'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -165,7 +165,7 @@ function MainNavigation() {
                         <li onClick={handleClickBack}>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/home'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -208,7 +208,7 @@ function MainNavigation() {
                             
                             <LinkSlot >
                                 <div >
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link style={{color: "white"}} to='/home'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>

@@ -25,7 +25,7 @@ function App(props) {
       
       <Routes>
         
-        <Route path="/kory_stennett_static_site"  element={<HomePage/>} />
+        <Route path="/home"  element={<HomePage/>} />
         <Route path="/projects"  element={<ProjectsPage />} />
         <Route path="/favorites"  element={<FavoritesPage />} />
         <Route path="/artwork"  element={<ArtworkPage />} />
