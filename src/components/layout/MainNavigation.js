@@ -7,32 +7,47 @@ import Card from '../UI/Card';
 import { useLocation } from "react-router-dom";
 import { useState, } from 'react';
 import React from 'react';
+import { Unity, useUnityContext } from "react-unity-webgl";
 
-function useForceUpdate(){
-    const [value, setValue] = useState(0); // integer state
-    
-    return () => setValue(value => value + 1); // update state to force render
-    // An function that increment 👆🏻 the previous state like here 
-    // is better than directly setting `value + 1`
-}
 
 function MainNavigation() {
 
     const currentLocation = useLocation();
     
-    const forceUpdate = useForceUpdate();
+    //const forceUpdate = useForceUpdate();
 
-    function handleClickBack(){
+    const { unityProvider, unload, isLoaded } = useUnityContext({
+        loaderUrl: "kory_stennett_static_site/UnityBuilds/Build.loader.js",
+        dataUrl: "kory_stennett_static_site/UnityBuilds/Build.data",
+        frameworkUrl: "kory_stennett_static_site/UnityBuilds/Build.framework.js",
+        codeUrl: "kory_stennett_static_site/UnityBuilds/Build.wasm",
+        webglContextAttributes: {
+            preserveDrawingBuffer: true,
+          },
+      });
 
-    }
-
-    
+    async function handleClickBack() {
+        
+        console.log("Awaiting unload - Kory")
+        setTimeout(() => {
+            //orceUpdate();
+                
+        }, 500);
+        
+        
+          
+          
+        
+        
+            
+        // Ready to navigate to another page.
+      }
     
 
     const handleRefresh = ()=>{
         // it re-renders the component
         console.log("refreshing...")
-        forceUpdate();
+        //forceUpdate();
         
         console.log("Refreshed")
     }
@@ -62,7 +77,7 @@ function MainNavigation() {
                     
                     Portfolio
                 </GlitchButton>
-                <nav onClick={handleRefresh}>
+                <nav >
                     <ul>
                         <li >
                             <LinkSlot >
@@ -73,7 +88,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li onClick={() => handleClickBack('/projects')}>
+                        <li >
                             <LinkSlot >
                                 <div> 
                                     <Link style={{color: "white"}} to='/projects'>Projects</Link>
@@ -81,7 +96,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={() => handleClickBack('/favorites')}> 
+                        <li > 
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -89,7 +104,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={() => handleClickBack('/artwork')}>
+                        <li >
                             <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>

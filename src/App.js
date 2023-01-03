@@ -12,27 +12,24 @@ import React, { useState, useEffect, useCallback } from "react";
 
 
 function App(props) {
-
-  const navigate = useNavigate;
-      function handleClickBack(url) {
-        
-        navigate(url, {replace: true})
-        
-        
-        // Ready to navigate to another page.
-      }
-      
   
+  const navigate = useNavigate;
+      
+  const [value, setValue] = useState(0); // integer state    
+  function refreshPage(){
+    setValue({})
+  }
   return (
     
     <Layout>
       
       <Routes>
-        <Route path="/"  element={<HomePage />} />
+        
         <Route path="/kory_stennett_static_site"  element={<HomePage/>} />
         <Route path="/projects"  element={<ProjectsPage />} />
         <Route path="/favorites"  element={<FavoritesPage />} />
         <Route path="/artwork"  element={<ArtworkPage />} />
+        <Route path="/*"  element={<HomePage />} />
       </Routes>
       
     </Layout>

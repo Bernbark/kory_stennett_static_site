@@ -16,7 +16,7 @@ function ProjectsPage (props){
   
   const isSmall = useMediaQuery({ query: '(max-width: 1200px)' })
   
-    const { unityProvider, unload } = useUnityContext({
+    const { unityProvider, unload, isLoaded, loadingProgression  } = useUnityContext({
         loaderUrl: "kory_stennett_static_site/UnityBuilds/Build.loader.js",
         dataUrl: "kory_stennett_static_site/UnityBuilds/Build.data",
         frameworkUrl: "kory_stennett_static_site/UnityBuilds/Build.framework.js",
@@ -30,7 +30,7 @@ function ProjectsPage (props){
     window.devicePixelRatio
   );
   
-  const { isLoaded } = useUnityContext();
+  
       const handleChangePixelRatio = useCallback(
         function () {
           // A function which will update the device pixel ratio of the Unity
@@ -54,17 +54,7 @@ function ProjectsPage (props){
         [devicePixelRatio]
       );
 
-      async function handleClickBack() {
-        
-        console.log("Awaiting unload - Kory")
-        
-          unload();
-          
-        
-        
-            
-        // Ready to navigate to another page.
-      }
+      
     return <div >
         <div>
             <TitleCard>
@@ -73,7 +63,10 @@ function ProjectsPage (props){
                 </h1>
             </TitleCard>
             <TwoFrameCard>
-              {isBigScreen && <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>}
+              {isBigScreen && <div>
+                <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
+              <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800, visibility: isLoaded ? "visible" : "hidden" }} devicePixelRatio={devicePixelRatio}/>
+              </div>}
               {isSmall && <h1>Try playing on a larger screen for this game to appear here!</h1>}
                 <Card><h2>Pinball Roguelite</h2><br></br><h3>***NOTE***<br></br>This game will continue running while you are on the site, and this is not intentional. Working on a fix, sorry!
                 in the meantime, you'll have to do a site refresh to get it to stop running in the background. 
