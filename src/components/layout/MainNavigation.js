@@ -11,7 +11,7 @@ function MainNavigation() {
     const navigate = useNavigate;
       function handleClickBack(url) {
         
-        navigate(url)
+        navigate(url, {replace: true})
         
         
         // Ready to navigate to another page.
