@@ -42,7 +42,7 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav >
                     <ul>
-                        <li onClick={event => handleClickBack(event, '/kory_stennett_static_site')}>
+                        <li onClick={() => handleClickBack('/kory_stennett_static_site')}>
                             <LinkSlot >
                                 <div >
                                     <Link reloadDocument style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
@@ -51,7 +51,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li onClick={event => handleClickBack(event, '/projects')}>
+                        <li onClick={() => handleClickBack('/projects')}>
                             <LinkSlot >
                                 <div> 
                                     <Link reloadDocument style={{color: "white"}} to='/projects'>Projects</Link>
@@ -59,7 +59,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={handleClickBack}> 
+                        <li onClick={() => handleClickBack('/favorites')}> 
                             <LinkSlot>
                                 <div>
                                     <Link reloadDocument style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -67,7 +67,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={handleClickBack}>
+                        <li onClick={() => handleClickBack('/artwork')}>
                             <LinkSlot >
                                 <div>
                                     <Link reloadDocument style={{color: "white"}} to='/artwork'>"Art"</Link>
