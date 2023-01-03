@@ -6,8 +6,16 @@ import Warning from '../components/UI/Warning';
 import React, { useState, useEffect, useCallback, Component } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { withRouter } from 'react-router'
+import { useMediaQuery } from 'react-responsive'
 function ProjectsPage (props){
-    
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1782px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1201px)' })
+  //onst isTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
+  
+  const isSmall = useMediaQuery({ query: '(max-width: 1200px)' })
+  
     const { unityProvider, unload } = useUnityContext({
         loaderUrl: "kory_stennett_static_site/UnityBuilds/Build.loader.js",
         dataUrl: "kory_stennett_static_site/UnityBuilds/Build.data",
@@ -56,7 +64,8 @@ function ProjectsPage (props){
                 </h1>
             </TitleCard>
             <TwoFrameCard>
-              <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>
+              {isBigScreen && <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800}} devicePixelRatio={devicePixelRatio}/>}
+              {isSmall && <h1>Try playing on a larger screen for this game to appear here!</h1>}
                 <Card><h2>Pinball Roguelite</h2><br></br><h3>***NOTE***<br></br>This game will continue running while you are on the site, and this is not intentional. Working on a fix, sorry!
                 in the meantime, you'll have to do a site refresh to get it to stop running in the background. 
                 <br></br><br></br>This is a really rough first draft of a pinball styled roguelite game.<br></br>It's made in 3D but is topdown which
