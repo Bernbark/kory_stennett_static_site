@@ -10,6 +10,7 @@ import Card from '../UI/Card';
 function MainNavigation() {
     
       function handleClickBack() {
+        // eslint-disable-next-line no-restricted-globals
         location.reload(false);
         console.log("Refreshed on click back");
         // Ready to navigate to another page.
