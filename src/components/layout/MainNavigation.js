@@ -10,7 +10,7 @@ import Card from '../UI/Card';
 function MainNavigation() {
     
       function handleClickBack() {
-        window.location.reload(false);
+        //window.location.reload(false);
         console.log("Refreshed on click back");
         // Ready to navigate to another page.
       }
