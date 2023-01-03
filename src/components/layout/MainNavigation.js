@@ -4,18 +4,40 @@ import { useMediaQuery } from 'react-responsive';
 import LinkSlot from '../UI/LinkSlot';
 import GlitchButton from '../UI/GlitchButton';
 import Card from '../UI/Card';
-import { useNavigate  } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import { useState, } from 'react';
+import React from 'react';
 
+function useForceUpdate(){
+    const [value, setValue] = useState(0); // integer state
+    
+    return () => setValue(value => value + 1); // update state to force render
+    // An function that increment 👆🏻 the previous state like here 
+    // is better than directly setting `value + 1`
+}
 
 function MainNavigation() {
-    const navigate = useNavigate;
-      function handleClickBack(url) {
-        
-        navigate(url, {replace: true})
-        
-        
-        // Ready to navigate to another page.
-      }
+
+    const currentLocation = useLocation();
+    
+    const forceUpdate = useForceUpdate();
+
+    function handleClickBack(){
+
+    }
+
+    
+    
+
+    const handleRefresh = ()=>{
+        // it re-renders the component
+        console.log("refreshing...")
+        forceUpdate();
+        window.location.reload();
+        console.log("Refreshed")
+    }
+    
+       
     var bgColors = { "Default": "#81b71a",
                     "Purple": "#B967FF",
                     "Blue": "#01CDFE",
@@ -40,9 +62,9 @@ function MainNavigation() {
                     
                     Portfolio
                 </GlitchButton>
-                <nav >
+                <nav onClick={handleRefresh}>
                     <ul>
-                        <li onClick={() => handleClickBack('/kory_stennett_static_site')}>
+                        <li >
                             <LinkSlot >
                                 <div >
                                     <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
