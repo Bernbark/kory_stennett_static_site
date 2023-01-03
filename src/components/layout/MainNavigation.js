@@ -12,10 +12,10 @@ function MainNavigation() {
       function handleClickBack() {
         
         
-        setTimeout(()=>{
-            window.location.reload(false);
-        }, 500);
-        console.log("Refreshed on click back");
+        //setTimeout(()=>{
+            //window.location.reload(false);
+        //}, 500);
+        //console.log("Refreshed on click back");
         // Ready to navigate to another page.
       }
     var bgColors = { "Default": "#81b71a",
@@ -44,7 +44,7 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav >
                     <ul>
-                        <li onClick={handleClickBack}>
+                        <li onClick={() => {window.location.href="/kory_stennett_static_site"}}>
                             <LinkSlot >
                                 <div >
                                     <Link  style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
@@ -53,7 +53,7 @@ function MainNavigation() {
                             </LinkSlot>
                             
                         </li>
-                        <li onClick={handleClickBack}>
+                        <li onClick={() => {window.location.href="/projects"}}>
                             <LinkSlot >
                                 <div> 
                                     <Link  style={{color: "white"}} to='/projects'>Projects</Link>
@@ -61,7 +61,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={handleClickBack}> 
+                        <li onClick={() => {window.location.href="/favorites"}}> 
                             <LinkSlot>
                                 <div>
                                     <Link style={{color: "white"}} to='/favorites'>Faves</Link>
@@ -69,7 +69,7 @@ function MainNavigation() {
                                 
                             </LinkSlot>
                         </li>
-                        <li onClick={handleClickBack}>
+                        <li onClick={() => {window.location.href="/artwork"}}>
                             <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
@@ -86,7 +86,7 @@ function MainNavigation() {
                 </GlitchButton>
                 <nav>
                     <ul>
-                        <li onClick={handleClickBack}>
+                        <li onClick={() => {window.location.href="/kory_stennett_static_site"}}>
                             <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
