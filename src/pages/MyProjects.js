@@ -29,10 +29,7 @@ function ProjectsPage (props){
       const [devicePixelRatio, setDevicePixelRatio] = useState(
     window.devicePixelRatio
   );
-  useEffect(()=>{
-    return ()=> unload
-    },[])
-    //
+  
   const { isLoaded } = useUnityContext();
       const handleChangePixelRatio = useCallback(
         function () {
@@ -56,7 +53,19 @@ function ProjectsPage (props){
         },
         [devicePixelRatio]
       );
-    return <div>
+
+      async function handleClickBack() {
+        
+        console.log("Awaiting unload - Kory")
+        
+          unload();
+          
+        
+        
+            
+        // Ready to navigate to another page.
+      }
+    return <div >
         <div>
             <TitleCard>
                 <h1>

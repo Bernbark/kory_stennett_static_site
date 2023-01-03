@@ -8,6 +8,12 @@ import Card from '../UI/Card';
 
 
 function MainNavigation() {
+    
+      function handleClickBack() {
+        window.location.reload(true);
+        console.log("Refreshed on click back");
+        // Ready to navigate to another page.
+      }
     var bgColors = { "Default": "#81b71a",
                     "Purple": "#B967FF",
                     "Blue": "#01CDFE",
@@ -32,12 +38,12 @@ function MainNavigation() {
                     
                     Portfolio
                 </GlitchButton>
-                <nav>
+                <nav onClick={handleClickBack}>
                     <ul>
                         <li>
                             <LinkSlot >
                                 <div >
-                                    <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
+                                    <Link  style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -46,7 +52,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot >
                                 <div> 
-                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
+                                    <Link  style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -60,7 +66,7 @@ function MainNavigation() {
                             </LinkSlot>
                         </li>
                         <li>
-                            <LinkSlot>
+                            <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
                                 </div>
@@ -77,7 +83,7 @@ function MainNavigation() {
                 <nav>
                     <ul>
                         <li>
-                            <LinkSlot>
+                            <LinkSlot >
                                 <div>
                                     <Link style={{color: "white"}} to='/kory_stennett_static_site'>Home</Link>
                                 </div>
@@ -88,7 +94,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
+                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -129,7 +135,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div>
-                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
+                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
@@ -172,7 +178,7 @@ function MainNavigation() {
                         <li>
                             <LinkSlot>
                                 <div > 
-                                    <Link style={{color: "white"}} to='/new-meetup'>Projects</Link>
+                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
                                 </div>
                                 
                             </LinkSlot>
