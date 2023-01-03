@@ -12,10 +12,9 @@ function MainNavigation() {
       function handleClickBack() {
         
         
-        if (!window.location.hash) {
-            window.location = window.location + '#loaded';
-            window.location.reload();
-        }
+        setTimeout(()=>{
+            window.location.reload(false);
+        }, 500);
         console.log("Refreshed on click back");
         // Ready to navigate to another page.
       }
