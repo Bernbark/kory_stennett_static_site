@@ -33,7 +33,7 @@ function MainNavigation() {
         // it re-renders the component
         console.log("refreshing...")
         forceUpdate();
-        window.location.reload();
+        
         console.log("Refreshed")
     }
     
