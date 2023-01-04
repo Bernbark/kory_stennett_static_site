@@ -11,3 +11,17 @@
 .flipCard > h3{
     font-size:2rem;
 }
+
+.flipCardDark {
+    margin: 1%;
+    background-color: rgb(12, 11, 110);
+    
+  }
+
+.flipCardDark > h2{
+    font-size:1rem;
+}
+
+.flipCardDark > h3{
+    font-size:2rem;
+}

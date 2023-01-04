@@ -1,4 +1,4 @@
-.card {
+.light {
     background-color: rgb(76, 135, 184);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(126, 4, 105, 0.521);
@@ -14,7 +14,7 @@
     justify-content: center;
   }
 
-.card > img{
+.light > img{
   
   box-shadow: 0 4px 10px rgba(126, 4, 105, 0.521);
   max-width: 600px;
@@ -36,18 +36,18 @@
 
 
 
-.card > img:hover{
+.light > img:hover{
   transform:scale(1.4);
 }
 
-.card > h2{
+.light > h2{
   flex-grow: 1;
   font-size: 3em;
   flex-direction: column;
   color: white;
 }
 
-.card > h1{
+.light > h1{
   flex-grow: 1;
   font-size: 4em;
   margin: 0%;
@@ -55,7 +55,7 @@
   color: white;
 }
 
-.card > p{
+.light > p{
   font-size: 1.7em;
   
   flex-grow: 1;
@@ -63,23 +63,109 @@
   flex: 0 0 100%;
 }
 
-.card > h3{
+.light > h3{
   flex-grow: 1;
 }
 
-.card > a{
+.light > a{
   margin: 2%;
   font-size: 5em;
   
   transition: 1s;
 }
 
-.card > a:hover{
+.light > a:hover{
   color:white;
   transform:scale(1.1);
 }
 
-.card:hover{
+.light:hover{
   background-color: rgb(68, 121, 165);
 }
 
+/* Dark Theme Section */
+
+.dark {
+  background-color: rgb(32, 40, 48);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(126, 4, 105, 0.521);
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  text-align: center;
+  margin:1%;
+  padding: 1%;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dark > img{
+
+box-shadow: 0 4px 10px rgba(126, 4, 105, 0.521);
+max-width: 600px;
+max-height: 600px;
+margin: 1%;
+padding: 1%;
+flex-direction: column;
+transition: 1s;
+width:100%;
+height: auto;
+ object-fit:contain;
+ 
+ filter: blur(0);
+-webkit-filter: blur(0);
+transform: translateZ(0);
+-webkit-transform: translateZ(0);
+
+}
+
+
+
+.dark > img:hover{
+transform:scale(1.4);
+}
+
+.dark > h2{
+flex-grow: 1;
+font-size: 3em;
+flex-direction: column;
+color: white;
+}
+
+.dark > h1{
+flex-grow: 1;
+font-size: 4em;
+margin: 0%;
+flex-direction: column;
+color: white;
+}
+
+.dark > p{
+font-size: 1.7em;
+
+flex-grow: 1;
+flex-direction: column;
+flex: 0 0 100%;
+}
+
+.dark > h3{
+flex-grow: 1;
+}
+
+.dark > a{
+margin: 2%;
+font-size: 5em;
+
+transition: 1s;
+}
+
+.dark > a:hover{
+color:white;
+transform:scale(1.1);
+}
+
+.dark:hover{
+background-color: rgb(24, 27, 29);
+}

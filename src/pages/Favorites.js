@@ -12,7 +12,7 @@ import ReactCardFlip from 'react-card-flip';
 import flipStyles from '../components/UI/FlipCard.module.css';
 import React from 'react';
 import FlipCard from '../components/UI/FlipCard';
-function FavoritesPage() {
+function FavoritesPage(props) {
     
     
 
@@ -45,13 +45,13 @@ function FavoritesPage() {
                 </h1>
                 
             </TitleCard>
-            <Card>
+            <Card classNameToGive={props.classNameToGive}>
                 
                 <MidTitleCard><h1>Mikeeeyyy!</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
-                    <FlipCard backMessage={<Card className={flipStyles.flipCard}>
+                    <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>{mikeyMessage.title}</h2>
                         <h3>{mikeyMessage.message1}
                         </h3>
@@ -62,9 +62,10 @@ function FavoritesPage() {
                     
                                             
                     }>
+                        
                         <h2>{mikeyMessage.front}</h2>
-                    </FlipCard>
-                    <Card>
+                    </FlipCard >
+                    <Card classNameToGive={props.classNameToGive}>
                         <ImageSlot>
                             <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -72,7 +73,7 @@ function FavoritesPage() {
                 </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     <h2>{mikeyMessage.title}</h2>
                         <h3>{mikeyMessage.message1}
                         </h3>
@@ -85,7 +86,7 @@ function FavoritesPage() {
                     }>
                         <h2>{mikeyMessage.front}</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -94,7 +95,7 @@ function FavoritesPage() {
                 }
                 {isMiniscule && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     
                                     <h2>{mikeyMessage.title}</h2>
                         <h3>{mikeyMessage.message1}
@@ -108,7 +109,7 @@ function FavoritesPage() {
                     }>
                         <h2>{mikeyMessage.front}</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.medium} src={mikey} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -117,7 +118,7 @@ function FavoritesPage() {
                 }
                 {isTiny && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     <h2 style={{ fontSize:'1.5rem' }}>{mikeyMessage.title}</h2>
                         <h3 style={{ fontSize:'1rem' }}>{mikeyMessage.message1}
                         </h3>
@@ -130,7 +131,7 @@ function FavoritesPage() {
                     }>
                         <h2 style={{ fontSize:'1.6rem' }}>{mikeyMessage.front}</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.tiny} src={mikey} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -139,12 +140,12 @@ function FavoritesPage() {
                 }
 
             </Card>
-            <Card>
+            <Card classNameToGive={props.classNameToGive}>
                 <MidTitleCard><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
-                    <FlipCard backMessage={<Card>
+                    <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>{friendMessage.title}</h2>
                         <h3>{friendMessage.message1}
                         </h3>
@@ -157,7 +158,7 @@ function FavoritesPage() {
                     }>
                         <h2>{friendMessage.front}</h2>
                     </FlipCard>
-                    <Card>
+                    <Card classNameToGive={props.classNameToGive}>
                         <ImageSlot>
                             <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -165,7 +166,7 @@ function FavoritesPage() {
                 </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     <h2>{friendMessage.title}</h2>
                         <h3>{friendMessage.message1}
                         </h3>
@@ -178,7 +179,7 @@ function FavoritesPage() {
                     }>
                         <h2>{friendMessage.front}</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -187,7 +188,7 @@ function FavoritesPage() {
                 }
                 {isMiniscule && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     <h2>{friendMessage.title}</h2>
                         <h3>{friendMessage.message1}
                         </h3>
@@ -200,7 +201,7 @@ function FavoritesPage() {
                     }>
                         <h2>{friendMessage.front}</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.medium} src={theBoiz} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -209,7 +210,7 @@ function FavoritesPage() {
                 }
                 {isTiny && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2 style={{ fontSize:'1.5rem' }}>{friendMessage.title}</h2>
                         <h3 style={{ fontSize:'1rem' }}>{friendMessage.message1}
                         </h3>
@@ -222,7 +223,7 @@ function FavoritesPage() {
                     }>
                         <h2 style={{ fontSize:'1.6rem' }}>{friendMessage.front}</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.tiny} src={theBoiz} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -231,13 +232,13 @@ function FavoritesPage() {
                 }
 
             </Card>
-            <Card>
+            <Card classNameToGive={props.classNameToGive}>
                 
                 <MidTitleCard><h1>Overwatch Love: September, 2022</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
-                    <FlipCard  backMessage={<Card className={flipStyles.flipCard}>
+                    <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card className={flipStyles.flipCard}>
                         <h2>Oh Overwatch...</h2>
                         <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
@@ -253,7 +254,7 @@ function FavoritesPage() {
                     }>
                         <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
                     </FlipCard>
-                    <Card>
+                    <Card classNameToGive={props.classNameToGive}>
                         <ImageSlot>
                             <img className={imageStyles.large} src={relic} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -261,7 +262,7 @@ function FavoritesPage() {
                 </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card>
                         <h2>Oh Overwatch...</h2>
                         <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
@@ -277,7 +278,7 @@ function FavoritesPage() {
                     }>
                         <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.large} src={relic} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -286,7 +287,7 @@ function FavoritesPage() {
                 }
                 {isMiniscule && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card>
                         <h2>Oh Overwatch...</h2>
                         <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
@@ -302,7 +303,7 @@ function FavoritesPage() {
                     }>
                         <h2>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.medium} src={relic} alt="My Pic Should Be Here..." />
                                     </ImageSlot>
@@ -311,7 +312,7 @@ function FavoritesPage() {
                 }
                 {isTiny && 
                             <div>
-                                <FlipCard backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card>
                         <h2 style={{ fontSize:'1.5rem' }}>Oh Overwatch...</h2>
                         <h3 style={{ fontSize:'1rem' }}>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
@@ -327,7 +328,7 @@ function FavoritesPage() {
                     }>
                         <h2 style={{ fontSize:'1.6rem' }}>That time my years of loot boxes I had saved were opened for me &#128151;</h2>
                     </FlipCard>
-                                <Card>
+                                <Card classNameToGive={props.classNameToGive}>
                                     <ImageSlot>
                                         <img className={imageStyles.tiny} src={relic} alt="My Pic Should Be Here..." />
                                     </ImageSlot>

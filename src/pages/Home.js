@@ -1,7 +1,14 @@
 import myPic from '../Images/My_Pic.jpg'
 import Card from '../components/UI/Card';
 import Warning from '../components/UI/Warning';
-function HomePage(){
+import { useState } from 'react';
+
+
+
+function HomePage(props){
+
+    const classNameString = props.classNameToGive;
+    
     return (
         
         
@@ -12,7 +19,7 @@ function HomePage(){
             
                 <div>
                     <Warning>
-                        <Card>
+                        <Card classNameToGive={props.classNameToGive}>
                             
 
                             
@@ -32,14 +39,14 @@ function HomePage(){
                 
                 
             <Warning>
-                <Card>
+                <Card classNameToGive={classNameString}>
                     <h2>About Me</h2>
                     <p>I have been learning programming practices in Java, C#, Python, Javascript, HTML/CSS, PHP, SQL, and XML for the last three years in order to one day obtain employment as a software developer.</p>
 
                     <p>It's time for me to get serious about creating a presence for myself while applying for positions.
                         I believe that building this website will help give a human element to the applications I send, and I hope that someone sees this and can tell just how hard I am trying to get my foot in the door of this exciting field.</p>
                     
-                    <Card>
+                    <Card classNameToGive={classNameString}>
                         <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">Resume</a>
                     </Card>
                     <img src={myPic} alt="My Pic Should Be Here..." />

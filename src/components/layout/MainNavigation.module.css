@@ -1,5 +1,5 @@
 a{
-  color: #c0c0c0;
+  color: #ffffff;
 }
 .header {
     width: 100%;
@@ -213,3 +213,18 @@ a{
     padding: 0 1rem;
     margin-left: 0.5rem;
   }
+
+  .themeButton {
+
+    position: 'absolute';
+    bottom:0%;
+    left:50%;
+    color: black;
+}
+
+.bottom {
+  flex-grow: 1;
+  justify-content: 'flex-end';
+  
+}
+

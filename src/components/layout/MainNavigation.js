@@ -9,8 +9,15 @@ import { useState, } from 'react';
 import React from 'react';
 import { Unity, useUnityContext } from "react-unity-webgl";
 
+function useForceUpdate(){
+    const [value, setValue] = useState(0); // integer state
+    console.log("forcing update")
+    return () => setValue(value => value + 1); // update state to force render
+    // An function that increment 👆🏻 the previous state like here 
+    // is better than directly setting `value + 1`
+  }
 
-function MainNavigation() {
+function MainNavigation(props) {
 
     const currentLocation = useLocation();
     
@@ -26,7 +33,7 @@ function MainNavigation() {
           },
       });
 
-   
+    const toggleTheme = props.toggleTheme;
     
        
     var bgColors = { "Default": "#81b71a",
@@ -48,6 +55,7 @@ function MainNavigation() {
     
     return(
         <div>
+            
             {isDesktopOrLaptop && <header className={css.header}>
                 <GlitchButton>
                     
@@ -87,6 +95,7 @@ function MainNavigation() {
                                 </div>
                             </LinkSlot>
                         </li>
+                       
                     </ul>
                 </nav>
             </header>}

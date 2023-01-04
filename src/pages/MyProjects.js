@@ -31,7 +31,7 @@ function ProjectsPage (props){
     window.devicePixelRatio
   );
   
-  
+  const classNameString = props.classNameToGive;
       const handleChangePixelRatio = useCallback(
         function () {
           // A function which will update the device pixel ratio of the Unity
@@ -77,17 +77,20 @@ function ProjectsPage (props){
                     Projects
                 </h1>
             </TitleCard>
-            <Card>
+            <Card classNameToGive={classNameString}>
             <MidTitleCard><h1>
               Itch Titles
               </h1></MidTitleCard>
             <TwoFrameCard>
-              <Card>
+              <Card classNameToGive={classNameString}>
                 <h3>Okay so these games aren't exactly polished, but I do have some playable prototypes up on Itch.io for anyone to check out!</h3>
               </Card>
-              <Card>
+              <Card classNameToGive={classNameString}>
                 <LinkSlot>
+                  <div>
                   <a href='https://bernbark.itch.io/'>Itch Collection</a>
+                  </div>
+                  
                 </LinkSlot>
               </Card>
             </TwoFrameCard>
@@ -95,12 +98,20 @@ function ProjectsPage (props){
             
             <section>
             
-                    <Card>
+                    <Card classNameToGive={classNameString}>
                         <h2>
                             External Links
                             
                         </h2>
                     </Card>
+                        <Warning>
+                        <LinkSlot>
+                            <div>
+                            <a href='http://database-fun.herokuapp.com/'>Leave a Message!</a>
+                            </div>
+                            
+                        </LinkSlot>
+                        </Warning>
                         <Warning>
                         <LinkSlot>
                             <div>

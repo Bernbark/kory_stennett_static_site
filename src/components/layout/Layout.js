@@ -1,12 +1,18 @@
 import css from './Layout.module.css'
 import MainNavigation from "./MainNavigation";
 
-function Layout(props) {
+function Layout(props, ) {
+    const classNameString = props.classNameToGive;
+    const toggleTheme = props.toggleTheme;
     return <div>
-        <MainNavigation />
-        <main className={css.name}>
+        
+        <MainNavigation  toggleTheme={props.toggleTheme} />
+        
+        <main className={css.classNameString}>
             {props.children}
         </main>
+        
+        
     </div>
 }
 
