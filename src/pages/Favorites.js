@@ -50,7 +50,7 @@ function FavoritesPage(props) {
                     <TwoFrameCard>
                         
                         <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
-                            
+                            <h2 style={{ minWidth:'100%'}}>{mikeyMessage.title}</h2>
                             <h3>{mikeyMessage.message1}
                             </h3>
                             <br></br>
@@ -72,7 +72,7 @@ function FavoritesPage(props) {
                 {isSmall && 
                             <div>
                             <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
-                                
+                            <h2 style={{ minWidth:'100%'}}>{mikeyMessage.title}</h2>
                     <h3>{mikeyMessage.message1}
                     </h3>
                     <br></br>
@@ -95,7 +95,7 @@ function FavoritesPage(props) {
                             <div>
                                 <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     
-                                    
+                                <h2 style={{ minWidth:'100%'}}>{mikeyMessage.title}</h2>  
                         <h3>{mikeyMessage.message1}
                         </h3>
                         <br></br>
@@ -117,7 +117,7 @@ function FavoritesPage(props) {
                 {isTiny && 
                             <div>
                                 <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
-                                    
+                                <h2 style={{ fontSize:'1.5rem' }}>{mikeyMessage.title}</h2>   
                         <h3 style={{ fontSize:'1rem' }}>{mikeyMessage.message1}
                         </h3>
                         <br></br>
