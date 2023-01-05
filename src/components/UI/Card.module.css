@@ -42,13 +42,15 @@
 
 .light > h2{
   flex-grow: 1;
-  font-size: 3em;
+  font-size: 4em;
   flex-direction: column;
   color: white;
 }
 
 .light > h1{
   flex-grow: 1;
+  justify-content: center;
+  align-items: center;
   font-size: 4em;
   margin: 0%;
   flex-direction: column;
@@ -65,6 +67,7 @@
 
 .light > h3{
   flex-grow: 1;
+  
 }
 
 .light > a{
@@ -89,7 +92,8 @@
   background-color: rgb(32, 40, 48);
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(126, 4, 105, 0.521);
-  
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -129,7 +133,7 @@ transform:scale(1.4);
 
 .dark > h2{
 flex-grow: 1;
-font-size: 3em;
+font-size: 4em;
 flex-direction: column;
 color: white;
 }

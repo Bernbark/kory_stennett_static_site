@@ -19,15 +19,13 @@ function FavoritesPage(props) {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1782px)'
     })
-    const isBigScreen = useMediaQuery({ query: '(min-width: 1772px)' })
-    //onst isTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
-    const isLessBig = useMediaQuery({ query: '(min-width: 1314px) and (max-width: 1771px)' })
+    
     const isSmall = useMediaQuery({ query: '(min-width: 1314px) and (max-width: 1781px)' })
     const isMiniscule = useMediaQuery({ query: '(min-width: 677px) and (max-width: 1313px)' })
     const isTiny = useMediaQuery({ query: '(max-width: 676px)' })
 
     const mikeyMessage = { front: "My dog Michael! What a good dog! There aren't many things I'd die for but he is one of them.",
-                            title: "This awesome guy",
+                            title: "My Dog",
                             message1: "I love this dog and I would definitely do anything in my power to protect him.",
                             message2:"I've known Michael for 6 great years, he's a Maltese/pomeranian mix, and he's got a huge personality. \
                             While it might be hard to train him, I do appreciate his individuality as a dog. But it's hard to do anything when \
@@ -49,55 +47,55 @@ function FavoritesPage(props) {
                 
                 <MidTitleCard classNameToGive={props.classNameToGive}><h1>Mikeeeyyy!</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
-                <TwoFrameCard>
-                    
-                    <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
-                        <h2>{mikeyMessage.title}</h2>
-                        <h3>{mikeyMessage.message1}
-                        </h3>
-                        <br></br>
-                        <h3>{mikeyMessage.message2}
-                        </h3>
-                    </Card>
-                    
-                                            
-                    }>
+                    <TwoFrameCard>
                         
-                        <h2>{mikeyMessage.front}</h2>
-                    </FlipCard >
-                    <Card classNameToGive={props.classNameToGive}>
-                        <ImageSlot>
-                            <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
-                        </ImageSlot>
-                    </Card>
-                </TwoFrameCard>}
+                        <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
+                            
+                            <h3>{mikeyMessage.message1}
+                            </h3>
+                            <br></br>
+                            <h3>{mikeyMessage.message2}
+                            </h3>
+                        </Card>
+                        
+                                                
+                        }>
+                            
+                            <h2>{mikeyMessage.front}</h2>
+                        </FlipCard >
+                        <Card classNameToGive={props.classNameToGive}>
+                            <ImageSlot>
+                                <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
+                            </ImageSlot>
+                        </Card>
+                    </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
-                                    <h2>{mikeyMessage.title}</h2>
-                        <h3>{mikeyMessage.message1}
-                        </h3>
-                        <br></br>
-                        <h3>{mikeyMessage.message2}
-                        </h3>
-                    </Card>
-                    
-                                            
-                    }>
-                        <h2>{mikeyMessage.front}</h2>
-                    </FlipCard>
-                                <Card classNameToGive={props.classNameToGive}>
-                                    <ImageSlot>
-                                        <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
-                                    </ImageSlot>
-                                </Card>
-                            </div>
+                            <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
+                                
+                    <h3>{mikeyMessage.message1}
+                    </h3>
+                    <br></br>
+                    <h3>{mikeyMessage.message2}
+                    </h3>
+                </Card>
+                
+                                        
+                }>
+                    <h2>{mikeyMessage.front}</h2>
+                </FlipCard>
+                            <Card classNameToGive={props.classNameToGive}>
+                                <ImageSlot>
+                                    <img className={imageStyles.large} src={mikey} alt="My Pic Should Be Here..." />
+                                </ImageSlot>
+                            </Card>
+                        </div>
                 }
                 {isMiniscule && 
                             <div>
                                 <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                                     
-                                    <h2>{mikeyMessage.title}</h2>
+                                    
                         <h3>{mikeyMessage.message1}
                         </h3>
                         <br></br>
@@ -119,7 +117,7 @@ function FavoritesPage(props) {
                 {isTiny && 
                             <div>
                                 <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
-                                    <h2 style={{ fontSize:'1.5rem' }}>{mikeyMessage.title}</h2>
+                                    
                         <h3 style={{ fontSize:'1rem' }}>{mikeyMessage.message1}
                         </h3>
                         <br></br>
@@ -157,7 +155,7 @@ function FavoritesPage(props) {
                                             
                     }>
                         <h2>{friendMessage.front}</h2>
-                    </FlipCard>
+                    </FlipCard >
                     <Card classNameToGive={props.classNameToGive}>
                         <ImageSlot>
                             <img className={imageStyles.large} src={theBoiz} alt="My Pic Should Be Here..." />
@@ -238,7 +236,7 @@ function FavoritesPage(props) {
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
-                    <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card className={flipStyles.flipCard}>
+                    <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>Oh Overwatch...</h2>
                         <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
@@ -262,7 +260,7 @@ function FavoritesPage(props) {
                 </TwoFrameCard>}
                 {isSmall && 
                             <div>
-                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>Oh Overwatch...</h2>
                         <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
@@ -287,7 +285,7 @@ function FavoritesPage(props) {
                 }
                 {isMiniscule && 
                             <div>
-                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>Oh Overwatch...</h2>
                         <h3>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
