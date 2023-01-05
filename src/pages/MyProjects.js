@@ -72,13 +72,13 @@ function ProjectsPage (props){
       
     return <div >
         <div>
-            <TitleCard>
+            <TitleCard classNameToGive={classNameString}>
                 <h1>
                     Projects
                 </h1>
             </TitleCard>
             <Card classNameToGive={classNameString}>
-            <MidTitleCard><h1>
+            <MidTitleCard classNameToGive={classNameString}><h1>
               Itch Titles
               </h1></MidTitleCard>
             <TwoFrameCard>

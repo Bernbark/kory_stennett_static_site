@@ -169,3 +169,44 @@ transform:scale(1.1);
 .dark:hover{
 background-color: rgb(24, 27, 29);
 }
+
+.dark > button{
+  font-size: 3rem;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #800040;
+  color: white;
+  border: 1px solid #800040;
+  
+}
+
+
+
+
+.dark >button:hover {
+  background-color: #9c1458;
+  border-color: #9c1458;
+}
+
+.light > button{
+  font-size: 3rem;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #c70667;
+  color: white;
+  border: 1px solid #800040;
+  
+}
+
+
+
+
+.light >button:hover {
+  background-color: #d32d80;
+  border-color: #ffffff;
+}
+

@@ -8,7 +8,7 @@ function Card(props) {
     
     
     
-    console.log(classNameString);
+    
     if(classNameString == "dark"){
         jSXElement= <div className={css.dark}>{props.children}</div>
     }

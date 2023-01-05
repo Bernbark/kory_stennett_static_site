@@ -14,7 +14,7 @@ const FlipCard = (props) => {
     
     
     
-    console.log(classNameString);
+    
     if(classNameString == "dark"){
         jSXElement= <ReactCardFlip containerClassName={css.flipCardDark} isFlipped={isFlipped} flipDirection="horizontal">
         <Card classNameToGive={classNameString}>

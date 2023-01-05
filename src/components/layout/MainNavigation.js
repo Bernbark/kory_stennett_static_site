@@ -52,187 +52,374 @@ function MainNavigation(props) {
     const isTiny = useMediaQuery({ query: '(min-width: 555px) and (max-width: 799px)' })
     const isMiniscule = useMediaQuery({ query: '(min-width: 236px) and (max-width: 554px)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
-    
-    return(
-        <div>
-            
-            {isDesktopOrLaptop && <header className={css.header}>
-                <GlitchButton>
-                    
-                    Portfolio
-                </GlitchButton>
-                <nav >
-                    <ul>
-                        <li >
-                            <LinkSlot >
-                                <div >
-                                    <Link style={{color: "white"}} to='/home'>Home</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                            
-                        </li>
-                        <li >
-                            <LinkSlot >
-                                <div> 
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li > 
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li >
-                            <LinkSlot >
-                                <div>
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                </div>
-                            </LinkSlot>
-                        </li>
-                       
-                    </ul>
-                </nav>
-            </header>}
-            
-            {isSmall && <header className={css.headerPortrait}>
-                <GlitchButton>
-                    Portfolio
-                </GlitchButton>
-                <nav>
-                    <ul>
-                        <li >
-                            <LinkSlot >
-                                <div>
-                                    <Link style={{color: "white"}} to='/home'>Home</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                            
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                </div>
-                            </LinkSlot>
-                        </li>
-                    </ul>
-                </nav>
-            </header>}
-            {isTiny && <header className={css.headerTiny}>
-                <GlitchButton>
-                    Portfolio
-                </GlitchButton>
-                <nav>
-                    <ul>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/home'>Home</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                            
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div>
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                </div>
-                            </LinkSlot>
-                        </li>
-                    </ul>
-                </nav>
-            </header>}
-            {isMiniscule && <header className={css.headerMini}>
-                <GlitchButton>
-                    Portfolio
-                </GlitchButton>
-                <nav>
-                    <ul>
-                        <Card>
-                        <li >
-                            
-                            <LinkSlot >
-                                <div >
-                                    <Link style={{color: "white"}} to='/home'>Home</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                            
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div > 
-                                    <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        </Card>
-                        <Card>
-                        <li >
-                            <LinkSlot >
-                                <div >
-                                    <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                </div>
-                                
-                            </LinkSlot>
-                        </li>
-                        <li >
-                            <LinkSlot>
-                                <div >
-                                    <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                </div>
-                            </LinkSlot>
-                        </li>
-                        </Card>
+    if(props.classNameToGive == "dark"){
+        return(
+        
+            <div>
+                
+                {isDesktopOrLaptop && <header className={css.headerDark}>
+                    <GlitchButton classNameToGive={props.classNameToGive}>
                         
-                    </ul>
-                </nav>
-            </header>}
-        </div>);
+                        Portfolio
+                    </GlitchButton>
+                    <nav >
+                        <ul>
+                            <li >
+                                <LinkSlot >
+                                    <div >
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot >
+                                    <div> 
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li > 
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot >
+                                    <div>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                           
+                        </ul>
+                    </nav>
+                </header>}
+                
+                {isSmall && <header className={css.headerPortraitDark}>
+                    <GlitchButton classNameToGive={props.classNameToGive}>
+                        Portfolio
+                    </GlitchButton>
+                    <nav>
+                        <ul>
+                            <li >
+                                <LinkSlot >
+                                    <div>
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>}
+                {isTiny && <header className={css.headerTinyDark}>
+                    <GlitchButton classNameToGive={props.classNameToGive}>
+                        Portfolio
+                    </GlitchButton>
+                    <nav>
+                        <ul>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>}
+                {isMiniscule && <header className={css.headerMiniDark}>
+                    <GlitchButton classNameToGive={props.classNameToGive}>
+                        Portfolio
+                    </GlitchButton>
+                    <nav>
+                        <ul>
+                            <Card classNameToGive={props.classNameToGive}>
+                            <li >
+                                
+                                <LinkSlot >
+                                    <div >
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div > 
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            </Card>
+                            <Card classNameToGive={props.classNameToGive}>
+                            <li >
+                                <LinkSlot >
+                                    <div >
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div >
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                            </Card>
+                            
+                        </ul>
+                    </nav>
+                </header>}
+            </div>);
+            
+            
         
-        
+    }
     
-}
+    else{
+        return(
+        
+            <div>
+                
+                {isDesktopOrLaptop && <header className={css.header}>
+                    <GlitchButton>
+                        
+                        Portfolio
+                    </GlitchButton>
+                    <nav >
+                        <ul>
+                            <li >
+                                <LinkSlot >
+                                    <div >
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot >
+                                    <div> 
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li > 
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot >
+                                    <div>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                           
+                        </ul>
+                    </nav>
+                </header>}
+                
+                {isSmall && <header className={css.headerPortrait}>
+                    <GlitchButton>
+                        Portfolio
+                    </GlitchButton>
+                    <nav>
+                        <ul>
+                            <li >
+                                <LinkSlot >
+                                    <div>
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>}
+                {isTiny && <header className={css.headerTiny}>
+                    <GlitchButton>
+                        Portfolio
+                    </GlitchButton>
+                    <nav>
+                        <ul>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>}
+                {isMiniscule && <header className={css.headerMini}>
+                    <GlitchButton>
+                        Portfolio
+                    </GlitchButton>
+                    <nav>
+                        <ul>
+                            <Card>
+                            <li >
+                                
+                                <LinkSlot >
+                                    <div >
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                                
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div > 
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            </Card>
+                            <Card>
+                            <li >
+                                <LinkSlot >
+                                    <div >
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                    </div>
+                                    
+                                </LinkSlot>
+                            </li>
+                            <li >
+                                <LinkSlot>
+                                    <div >
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                    </div>
+                                </LinkSlot>
+                            </li>
+                            </Card>
+                            
+                        </ul>
+                    </nav>
+                </header>}
+            </div>);
+            
+            
+        
+    }
+    }
+    
 
 export default MainNavigation;

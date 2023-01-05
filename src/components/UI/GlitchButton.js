@@ -11,12 +11,23 @@ function GlitchButton(props) {
     const isTiny = useMediaQuery({ query: '(min-width: 327px) and (max-width: 799px)' })
     const isMiniscule = useMediaQuery({ query: '(min-width: 236px) and (max-width: 326px)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
-    return <div>
-        {isDesktopOrLaptop && <button className={css.button}>{props.children}</button>}
+    if(props.classNameToGive == "dark"){
+        return <div>
+        {isDesktopOrLaptop && <button className={css.glitchButtonDark}>{props.children}</button>}
+        {isSmall && <button className={css.buttonSmallDark}>{props.children}</button>}
+        {isMiniscule && <button className={css.buttonSmallDark}>{props.children}</button>}
+        {isTiny && <button className={css.buttonSmallDark}>{props.children}</button>}
+    </div>
+    }
+    else{
+        return <div>
+        {isDesktopOrLaptop && <button className={css.glitchButton}>{props.children}</button>}
         {isSmall && <button className={css.buttonSmall}>{props.children}</button>}
         {isMiniscule && <button className={css.buttonSmall}>{props.children}</button>}
         {isTiny && <button className={css.buttonSmall}>{props.children}</button>}
     </div>
+    }
+    
 }
 
 export default GlitchButton;

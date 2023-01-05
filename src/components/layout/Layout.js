@@ -6,7 +6,7 @@ function Layout(props, ) {
     const toggleTheme = props.toggleTheme;
     return <div>
         
-        <MainNavigation  toggleTheme={props.toggleTheme} />
+        <MainNavigation classNameToGive={classNameString} toggleTheme={props.toggleTheme} />
         
         <main className={css.classNameString}>
             {props.children}

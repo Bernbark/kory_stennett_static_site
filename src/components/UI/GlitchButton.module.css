@@ -1,6 +1,6 @@
 
   
-  button, button::after {
+  .glitchButton, .glitchButton::after {
     min-width: 20%;
     font-size: 36px;
     line-height: 200%;
@@ -15,7 +15,7 @@
     position: relative;
   }
   
-  button::after {
+  .glitchButton::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -35,7 +35,7 @@
     clip-path: var(--slice-0);
   }
   
-  button:hover::after {
+  .glitchButton:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
   }
@@ -125,4 +125,86 @@
       clip-path: var(--slice-1);
       transform: translate(0);
     }
+  }
+
+  /* Dark Theme */
+
+  .glitchButtonDark, .glitchButtonDark::after {
+    min-width: 20%;
+    font-size: 36px;
+    line-height: 200%;
+    background: linear-gradient(45deg, transparent 5%, rgb(54, 49, 54) 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: 1px 0px 0px #dd1bb3;
+    outline: transparent;
+    position: relative;
+  }
+  
+  .glitchButtonDark::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'Portfolio';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #d154b2 5%);
+    text-shadow: -3px -3px 0px #05f83a, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .glitchButtonDark:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+
+  .buttonSmallDark, .buttonSmallDark::after {
+    min-width: 20%;
+    font-size: 36px;
+    line-height: 125%;
+    background: linear-gradient(45deg, transparent 5%, rgb(158, 18, 163) 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: 1px 0px 0px #dd1bb3;
+    outline: transparent;
+    position: relative;
+  }
+  
+  .buttonSmallDark::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'Portfolio';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #d154b2 5%);
+    text-shadow: -3px -3px 0px #05f83a, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .buttonSmallDark:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
   }

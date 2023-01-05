@@ -205,6 +205,213 @@ a{
   .headerMini a.active {
     color: white;
   }
+
+  /** Dark theme */
+
+  .headerDark {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-bg-color);
+    padding: 0 10%;
+  }
+  
+  .logoDark {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerDark ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerDark li {
+    margin-left: 3rem;
+  }
+  
+  .headerDark a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+  }
+  
+  .headerDark a:hover,
+  .headerDark a:active,
+  .headerDark a.active {
+    color: white;
+  }
+
+  .headerTabletDark {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-bg-color);
+    padding: 0 10%;
+  }
+  
+  .logoTabletDark {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerTabletDark ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerTabletDark li {
+    margin-left: 3rem;
+    font-size: 1rem;
+  }
+  
+  .headerTabletDark a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    
+  }
+  
+  .headerTabletDark a:hover,
+  .headerTabletDark a:active,
+  .headerTabletDark a.active {
+    color: white;
+  }
+
+  .headerPortraitDark {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-bg-color);
+    padding: 0 10%;
+  }
+  
+  .logoPortraitDark {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerPortraitDark ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerPortraitDark li {
+    margin-left: 3rem;
+    font-size: .8rem;
+  }
+  
+  .headerPortraitDark a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+  }
+  
+  .headerPortraitDark a:hover,
+  .headerPortraitDark a:active,
+  .headerPortraitDark a.active {
+    color: white;
+  }
+
+  .headerTinyDark {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-bg-color);
+    padding: 0 10%;
+  }
+  
+  .logoTinyDark {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerTinyDark ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .headerTinyDark li {
+    margin-left: .3rem;
+    font-size: .3rem;
+  }
+  
+  .headerTinyDark a {
+    text-decoration: none;
+    font-size: 1rem;
+    
+  }
+  
+  .headerTinyDark a:hover,
+  .headerTinyDark a:active,
+  .headerTinyDark a.active {
+    color: white;
+  }
+
+  .headerMiniDark {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-bg-color);
+    
+  }
+  
+  .logoMiniDark {
+    font-size: .9rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headerMiniDark ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    
+  }
+  
+  .headerMiniDark li {
+    
+    font-size: .1rem;
+  }
+  
+  .headerMiniDark a {
+    text-decoration: none;
+    font-size: .7rem;
+    
+  }
+  
+  .headerMiniDark a:hover,
+  .headerMiniDark a:active,
+  .headerMiniDark a.active {
+    color: white;
+  }
   
   .badge {
     background-color: #cc2062;
@@ -217,9 +424,11 @@ a{
   .themeButton {
 
     position: 'absolute';
-    bottom:0%;
-    left:50%;
+    font-size: .8rem;
+    font-weight: 800;
+   
     color: black;
+    
 }
 
 .bottom {
@@ -228,3 +437,6 @@ a{
   
 }
 
+:root {
+  --dark-bg-color: rgb(0, 0, 0);
+}

@@ -39,7 +39,7 @@ function FavoritesPage(props) {
                             support, they were always there to help me. Thank you my friends!"}
 
     return (<div>
-            <TitleCard>
+            <TitleCard classNameToGive={props.classNameToGive}>
                 <h1>
                 Favorite Things
                 </h1>
@@ -47,7 +47,7 @@ function FavoritesPage(props) {
             </TitleCard>
             <Card classNameToGive={props.classNameToGive}>
                 
-                <MidTitleCard><h1>Mikeeeyyy!</h1></MidTitleCard>
+                <MidTitleCard classNameToGive={props.classNameToGive}><h1>Mikeeeyyy!</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
@@ -141,7 +141,7 @@ function FavoritesPage(props) {
 
             </Card>
             <Card classNameToGive={props.classNameToGive}>
-                <MidTitleCard><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
+                <MidTitleCard classNameToGive={props.classNameToGive}><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
@@ -234,7 +234,7 @@ function FavoritesPage(props) {
             </Card>
             <Card classNameToGive={props.classNameToGive}>
                 
-                <MidTitleCard><h1>Overwatch Love: September, 2022</h1></MidTitleCard>
+                <MidTitleCard classNameToGive={props.classNameToGive}><h1>Overwatch Love: September, 2022</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
                 <TwoFrameCard>
                     
@@ -312,7 +312,7 @@ function FavoritesPage(props) {
                 }
                 {isTiny && 
                             <div>
-                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card>
+                                <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2 style={{ fontSize:'1.5rem' }}>Oh Overwatch...</h2>
                         <h3 style={{ fontSize:'1rem' }}>I love this game, but to put it simply, these 1100 loot boxes were the culmination of 1300 hours of gameplay. I diiiid kind of hope to open them while recording, 
                             but that's okay. At least I got to keep all the items within, almost completing my entire OW 1 collection of cosmetics.
