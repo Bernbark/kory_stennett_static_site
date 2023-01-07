@@ -29,7 +29,7 @@ function HomePage(props){
                             
 
                             
-                            <h1>- Kory Stennett -</h1>
+                            <h1>Kory Stennett</h1>
                             
                             <p>showcasing my projects, techniques and experiments</p>                    
                             
