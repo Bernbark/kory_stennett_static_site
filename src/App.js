@@ -37,7 +37,7 @@ function App(props) {
     }, [theme]);
   return (
     
-    <Layout className={css.bottom} classNameToGive={theme} toggleTheme={toggleTheme}>
+    <Layout  classNameToGive={theme} toggleTheme={toggleTheme}>
       
             
             

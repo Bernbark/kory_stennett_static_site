@@ -47,16 +47,16 @@ function FavoritesPage(props) {
                 
                 <MidTitleCard classNameToGive={props.classNameToGive}><h1>Mikeeeyyy!</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
-                    <TwoFrameCard>
+                    <TwoFrameCard classNameToGive={props.classNameToGive}>
                         
-                        <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
+                        <FlipCard classNameToGive={props.classNameToGive} backMessage={<div>
                             <h2 style={{ minWidth:'100%'}}>{mikeyMessage.title}</h2>
                             <h3>{mikeyMessage.message1}
                             </h3>
                             <br></br>
                             <h3>{mikeyMessage.message2}
                             </h3>
-                        </Card>
+                        </div>
                         
                                                 
                         }>

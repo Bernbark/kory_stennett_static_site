@@ -41,7 +41,7 @@ function ArtworkPage(props){
            
              {isBigScreen &&
                 <section>
-                    <TwoFrameCard>
+                    <TwoFrameCard classNameToGive={props.classNameToGive}>
                         <Card classNameToGive={props.classNameToGive}>   
                                 <h2>Simple Spaceship</h2>
                                 <p>This fine looking pixelated mess is normally displayed much smaller, and has been used in several of my Unity projects! Simple pixel art like this reminds me of Mario Paint from the SNES.</p>
@@ -65,7 +65,7 @@ function ArtworkPage(props){
                             </ImageSlot>
                         </Card>            
                     </TwoFrameCard>
-                    <TwoFrameCard>
+                    <TwoFrameCard classNameToGive={props.classNameToGive}>
                         <Card classNameToGive={props.classNameToGive}>
                             <h2>Blood Acolyte</h2>
                             <p>These guys were sort of your followers in Custom Tower Defense, a large scope project which I return to from time to time.</p>
@@ -88,7 +88,7 @@ function ArtworkPage(props){
                                 </ImageSlot>
                         </Card>
                     </TwoFrameCard>
-                    <TwoFrameCard>
+                    <TwoFrameCard classNameToGive={props.classNameToGive}>
                         <Card classNameToGive={props.classNameToGive}>
                             <h2>Card Front</h2>
                             <p>My design for the fronts of cards in Card Battlers.</p>
@@ -111,7 +111,7 @@ function ArtworkPage(props){
                                 </ImageSlot>
                         </Card>            
                     </TwoFrameCard>
-                    <TwoFrameCard>
+                    <TwoFrameCard classNameToGive={props.classNameToGive}>
                         <Card classNameToGive={props.classNameToGive}>
                             <h2>My Car?</h2>
                             <p>Okay, it's not really art but I like this picture. My precious hybrid, and I do highly suggest this particular year, make and model.<br></br>
@@ -141,7 +141,7 @@ function ArtworkPage(props){
             
             {isLessBig &&
             <Card classNameToGive={props.classNameToGive}>
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Simple Spaceship</h2>
                     <p>This fine looking pixelated mess is normally displayed much smaller, and has been used in several of my Unity projects! Simple pixel art like this reminds me of Mario Paint from the SNES.</p>
@@ -158,7 +158,7 @@ function ArtworkPage(props){
                     
                 </Card>
                 </TwoFrameCard>
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Beam Attack</h2>
                     <p>One of the attacks I made for my first game ever. It was a project that I used to learn Unity with!</p>
@@ -178,7 +178,7 @@ function ArtworkPage(props){
                 </Card>
                 </TwoFrameCard>
                 
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Mohawk Man</h2>
                     <p>This cool dude was the main character of my card game, why is he so aggro?!</p>
@@ -197,7 +197,7 @@ function ArtworkPage(props){
                 </Card>
                 </TwoFrameCard>
                 
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Card Front</h2>
                     <p>My design for the fronts of cards in Card Battlers.</p>
@@ -216,7 +216,7 @@ function ArtworkPage(props){
                 </Card>
                 </TwoFrameCard>
                 
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Lightning Textures</h2>
                     <p>Some cool textures I would often use to produce lightning effects in Unity. Feel free to use it at will. I don't mind.</p>
@@ -238,7 +238,7 @@ function ArtworkPage(props){
                 </Card>
                 </TwoFrameCard>
                 
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                     <Card classNameToGive={props.classNameToGive}>
                         <h2>Not My Car</h2>
                         <p>Just one of many cool pics I took as a car dealership photographer. I got to see monster trucks, the Mustang Boss 302, and so many more unique vehicles. It was a great time.</p>

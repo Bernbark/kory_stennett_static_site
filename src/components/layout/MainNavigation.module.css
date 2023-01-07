@@ -194,6 +194,7 @@ a{
   
   .headerMini li {
     
+    text-align:justify;
     font-size: .1rem;
   }
   
@@ -424,16 +425,44 @@ a{
     margin-left: 0.5rem;
   }
 
-  .themeButton {
+  .themeButton{
 
     position: 'absolute';
-    font-size: .8rem;
+    font-size: 2rem;
     font-weight: 800;
    
     color: black;
-    
+    border:none;
 }
 
+.themeButtonSmall{
+
+  
+  font-size: 2rem;
+  font-weight: 800;
+ 
+  color: black;
+  border:none;
+}
+
+.themeButtonTiny{
+
+  position: 'absolute';
+  font-size: 2rem;
+  font-weight: 800;
+ 
+  color: black;
+  border:none;
+}
+
+.themeButtonMini{
+  flex-grow: 1;
+  font-size: 3.4em;
+  font-weight: 800;
+  line-height: 130%;
+  color: black;
+  border:none;
+}
 
 .bottom {
   flex-grow: 1;

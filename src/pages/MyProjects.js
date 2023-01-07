@@ -9,6 +9,7 @@ import { withRouter } from 'react-router'
 import { useMediaQuery } from 'react-responsive'
 import MidTitleCard from '../components/UI/MidTitleCard';
 import NeoCard from '../components/UI/NeoCard';
+import Column from '../components/UI/Column';
 function ProjectsPage (props){
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1782px)'
@@ -78,26 +79,27 @@ function ProjectsPage (props){
                     Projects
                 </h1>
             </TitleCard>
+            
             <Card classNameToGive={classNameString}>
             <MidTitleCard classNameToGive={classNameString}><h1>
               Itch Titles
               </h1></MidTitleCard>
-            <TwoFrameCard>
+            <TwoFrameCard classNameToGive={classNameString}>
               <Card classNameToGive={classNameString}>
                 <h3>These are WIPs, but I do have some playable prototypes up on Itch.io for anyone to check out!</h3>
               </Card>
-              <Card classNameToGive={classNameString}>
+              <NeoCard classNameToGive={classNameString}>
                 <LinkSlot classNameToGive={classNameString}>
                   
                   <a href='https://bernbark.itch.io/'>Itch Collection</a>
                   
                   
                 </LinkSlot>
-              </Card>
+              </NeoCard>
             </TwoFrameCard>
             </Card>
             
-            <section>
+            <Column classNameToGive={classNameString}>
             
                     
                     <NeoCard classNameToGive={classNameString}>
@@ -142,7 +144,9 @@ function ProjectsPage (props){
                     </NeoCard>
                         
                     
-            </section>
+            </Column>
+            
+            
             
         </div>
     </div>

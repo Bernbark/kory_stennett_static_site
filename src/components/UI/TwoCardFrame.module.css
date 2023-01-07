@@ -6,10 +6,28 @@
     
     
     
+    
     text-align: center;
     margin:1%;
     padding: 0%;
     color: white;
     
+    
+    
+  }
+
+  .twoCardDark {
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(126, 4, 105, 0.521);
+    display: flex;
+    
+    
+    
+    text-align: center;
+    margin:1%;
+    padding: 0%;
+    color: white;
+    object-fit:fill;
     justify-content: center;
   }

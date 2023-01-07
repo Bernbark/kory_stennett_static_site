@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 import { useState, } from 'react';
 import React from 'react';
 import { Unity, useUnityContext } from "react-unity-webgl";
+import TwoFrameCard from '../UI/TwoFrameCard';
 
 function useForceUpdate(){
     const [value, setValue] = useState(0); // integer state
@@ -149,7 +150,7 @@ function MainNavigation(props) {
                             </li>
                             <li>
                                 <LinkSlot classNameToGive={props.classNameToGive}>
-                                    <button className={css.themeButton} onClick={event => {
+                                    <button className={css.themeButtonSmall} onClick={event => {
                                         toggleTheme();
                                         
                                     }}>Toggle Theme</button>
@@ -199,7 +200,7 @@ function MainNavigation(props) {
                             </li>
                             <li>
                                 <LinkSlot classNameToGive={props.classNameToGive}>
-                                    <button className={css.themeButton} onClick={event => {
+                                    <button className={css.themeButtonTiny} onClick={event => {
                                         toggleTheme();
                                         
                                     }}>Toggle Theme</button>
@@ -215,7 +216,7 @@ function MainNavigation(props) {
                     </GlitchButton>
                     <nav>
                         <ul>
-                            <Card classNameToGive={props.classNameToGive}>
+                            
                             <li >
                                 
                                 <LinkSlot classNameToGive={props.classNameToGive}>
@@ -234,8 +235,8 @@ function MainNavigation(props) {
                                     
                                 </LinkSlot>
                             </li>
-                            </Card>
-                            <Card classNameToGive={props.classNameToGive}>
+                            
+                            
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
@@ -253,14 +254,14 @@ function MainNavigation(props) {
                             </li>
                             <li>
                                 <LinkSlot classNameToGive={props.classNameToGive}>
-                                    <button className={css.themeButton} onClick={event => {
+                                    <button className={css.themeButtonMini} onClick={event => {
                                         toggleTheme();
                                         
-                                    }}>Toggle Theme</button>
+                                    }}>Theme</button>
                                 </LinkSlot>
                            
                            </li>
-                            </Card>
+                            
                             
                         </ul>
                     </nav>
@@ -369,7 +370,7 @@ function MainNavigation(props) {
                             </li>
                             <li>
                                 <LinkSlot classNameToGive={props.classNameToGive}>
-                                    <button className={css.themeButton} onClick={event => {
+                                    <button className={css.themeButtonSmall} onClick={event => {
                                         toggleTheme();
                                         
                                     }}>Toggle Theme</button>
@@ -419,7 +420,7 @@ function MainNavigation(props) {
                             </li>
                             <li>
                                 <LinkSlot classNameToGive={props.classNameToGive}>
-                                    <button className={css.themeButton} onClick={event => {
+                                    <button className={css.themeButtonTiny} onClick={event => {
                                         toggleTheme();
                                         
                                     }}>Toggle Theme</button>
@@ -430,12 +431,13 @@ function MainNavigation(props) {
                     </nav>
                 </header>}
                 {isMiniscule && <header className={css.headerMini}>
+                    <TwoFrameCard>
                     <GlitchButton classNameToGive={props.classNameToGive}>
                     <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
-                            <Card classNameToGive={props.classNameToGive}>
+                            
                             <li >
                                 
                                 <LinkSlot classNameToGive={props.classNameToGive}>
@@ -454,8 +456,7 @@ function MainNavigation(props) {
                                     
                                 </LinkSlot>
                             </li>
-                            </Card >
-                            <Card classNameToGive={props.classNameToGive}>
+                            
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
@@ -471,19 +472,12 @@ function MainNavigation(props) {
                                     
                                 </LinkSlot>
                             </li>
-                            <li>
-                                <LinkSlot classNameToGive={props.classNameToGive}>
-                                    <button className={css.themeButton} onClick={event => {
-                                        toggleTheme();
-                                        
-                                    }}>Toggle Theme</button>
-                                </LinkSlot>
                            
-                           </li>
-                            </Card>
+                            
                             
                         </ul>
                     </nav>
+                    </TwoFrameCard>
                 </header>}
             </div>);
             

@@ -33,7 +33,7 @@
 
 .linkSlot > button {
   font-weight: 900;
-  font-size: .8em;
+  
   border:none;
   background-color: rgba(255, 208, 0, 0);
   border: 0px rgba(255, 255, 255, 0);
@@ -92,7 +92,7 @@ transition: .5s;
 .linkSlotDark > button {
   color:white !important;
   font-weight: 900;
-  font-size: .8em;
+ 
   border: 0px rgba(255, 255, 255, 0);
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
@@ -111,3 +111,4 @@ background-color: rgb(247, 2, 214);
 box-shadow: 0 2px 8px rgb(78, 45, 45);
 border: 1rem rgb(231, 100, 203);
 }
+
