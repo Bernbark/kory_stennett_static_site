@@ -2,17 +2,18 @@
   
   .glitchButton, .glitchButton::after {
     min-width: 20%;
-    font-size: 36px;
-    line-height: 200%;
-    background: linear-gradient(45deg, transparent 5%, rgb(158, 18, 163) 5%);
+    font-size: 48px;
+    line-height: 100%;
+    background-color: rgb(237, 8, 245);
     border: 0;
     color: #fff;
     letter-spacing: 5px;
-    
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-weight: 600;
+    box-shadow: rgb(0, 0, 0) 10px 15px 0px;
     text-shadow: 1px 0px 0px #dd1bb3;
     outline: transparent;
     position: relative;
+    transition: 1s;
   }
   
   .glitchButton::after {
@@ -23,7 +24,7 @@
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
     
-    content: 'Portfolio';
+    content: 'Resume';
     display: block;
     position: absolute;
     top: 0;
@@ -44,7 +45,8 @@
     min-width: 20%;
     font-size: 36px;
     line-height: 125%;
-    background: linear-gradient(45deg, transparent 5%, rgb(158, 18, 163) 5%);
+    font-weight: 600;
+    background-color: rgb(237, 8, 245);
     border: 0;
     color: #fff;
     letter-spacing: 5px;
@@ -53,6 +55,7 @@
     text-shadow: 1px 0px 0px #dd1bb3;
     outline: transparent;
     position: relative;
+    transition: 1s;
   }
   
   .buttonSmall::after {
@@ -63,7 +66,7 @@
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
     
-    content: 'Portfolio';
+    content: 'Resume';
     display: block;
     position: absolute;
     top: 0;
@@ -131,15 +134,16 @@
 
   .glitchButtonDark, .glitchButtonDark::after {
     min-width: 20%;
-    font-size: 36px;
-    line-height: 200%;
-    background: linear-gradient(45deg, transparent 5%, rgb(54, 49, 54) 5%);
+    font-size: 48px;
+    line-height: 100%;
+    background-color: rgb(54, 49, 54);
+    font-weight: 600;
     border: 0;
     color: #fff;
     letter-spacing: 5px;
+    transition: 1s;
     
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    text-shadow: 1px 0px 0px #dd1bb3;
+    
     outline: transparent;
     position: relative;
   }
@@ -152,15 +156,15 @@
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
     
-    content: 'Portfolio';
+    content: 'Resume';
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #d154b2 5%);
-    text-shadow: -3px -3px 0px #05f83a, 3px 3px 0px #00E6F6;
+    background: linear-gradient(45deg, transparent 3%, #373b3b 3%, #000000 5%, #bdbdbd 5%);
+    text-shadow: -3px -3px 0px #ff0095, 3px 3px 0px #ffffff;
     clip-path: var(--slice-0);
   }
   
@@ -173,15 +177,16 @@
     min-width: 20%;
     font-size: 36px;
     line-height: 125%;
-    background: linear-gradient(45deg, transparent 5%, rgb(158, 18, 163) 5%);
+    background-color: rgb(54, 49, 54);
     border: 0;
     color: #fff;
     letter-spacing: 5px;
-    
+    font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-shadow: 1px 0px 0px #dd1bb3;
     outline: transparent;
     position: relative;
+    transition: 1s;
   }
   
   .buttonSmallDark::after {
@@ -192,7 +197,7 @@
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
     
-    content: 'Portfolio';
+    content: 'Resume';
     display: block;
     position: absolute;
     top: 0;

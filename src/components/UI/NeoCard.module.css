@@ -1,25 +1,27 @@
-.light {
+.neolight {
     background-color: rgb(76, 135, 184);
     border-radius: 6px;
     
-    box-shadow: 10px 0px 0px 0px rgb(251, 255, 0),-10px 0px 0px 0px rgb(123, 255, 0);
-    align-items: center;
+    box-shadow: 10px 0px 0px 0px rgb(0, 247, 255),-10px 0px 0px 0px rgb(255, 136, 0);
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     text-align: center;
-    margin:1%;
-    padding: 1%;
-    color: white;
-    flex-direction: row;
-    justify-content: center;
-    transition: 1s;
+    align-items: center;
     
+    flex-direction: column;
+    justify-content: center;
+    
+  
+    margin:1%;
+    padding: 5%;
+    color: white;
+    transition: 1s;
   }
 
-.light > img{
+.neolight > img{
   
-  box-shadow: 0 4px 10px rgba(126, 4, 105, 0.521);
+    box-shadow: 15px 0px 4px 1px rgb(1, 5, 255);
   max-width: 600px;
   max-height: 600px;
   margin: 1%;
@@ -41,16 +43,14 @@
 
 
 
-.light > h2{
-  text-shadow: 0 2px 0px #000000;
+.neolight > h2{
   flex-grow: 1;
   font-size: 4em;
   flex-direction: column;
   color: white;
 }
 
-.light > h1{
-  text-shadow: 0 2px 0px #000000;
+.neolight > h1{
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -60,20 +60,20 @@
   color: white;
 }
 
-.light > p{
+.neolight > p{
   font-size: 1.7em;
-  text-shadow: 0 1px 0px #000000;
+  
   flex-grow: 1;
   flex-direction: column;
   flex: 0 0 100%;
 }
 
-.light > h3{
+.neolight > h3{
   flex-grow: 1;
   
 }
 
-.light > a{
+.neolight > a{
   margin: 2%;
   font-size: 5em;
   
@@ -82,32 +82,33 @@
 
 
 
-.light:hover{
+.neolight:hover{
   background-color: rgb(68, 121, 165);
 }
 
 /* Dark Theme Section */
 
-.dark {
+.neodark {
   background-color: rgb(32, 40, 48);
   border-radius: 6px;
-  box-shadow: 10px 0px 0px 0px rgb(126, 4, 106),-10px 0px 0px 0px rgb(126, 4, 106);
+  box-shadow: 10px 0px 0px 0px rgb(255, 255, 255),-10px 0px 0px 0px rgb(255, 255, 255);
+  justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
   text-align: center;
   margin:1%;
-  padding: 1%;
+    padding: 5%;
   color: white;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  transition: 1s;
+  transition:1s;
 }
 
-.dark > img{
+.neodark > img{
 
-box-shadow: 0 4px 10px #ff00ff;
+box-shadow: 12px 0px 0px 1px rgb(245, 0, 204), 20px 0px 0px 2px rgb(0, 245, 0), 25px 0px 0px 2px rgb(241, 245, 0);
 max-width: 600px;
 max-height: 600px;
 margin: 1%;
@@ -129,16 +130,14 @@ transform: translateZ(0);
 
 
 
-.dark > h2{
-  
+.neodark > h2{
 flex-grow: 1;
 font-size: 4em;
 flex-direction: column;
 color: white;
 }
 
-.dark > h1{
-  
+.neodark > h1{
 flex-grow: 1;
 font-size: 4em;
 margin: 0%;
@@ -146,7 +145,7 @@ flex-direction: column;
 color: white;
 }
 
-.dark > p{
+.neodark > p{
 font-size: 1.7em;
 
 flex-grow: 1;
@@ -154,27 +153,27 @@ flex-direction: column;
 flex: 0 0 100%;
 }
 
-.dark > h3{
+.neodark > h3{
 flex-grow: 1;
 }
 
-.dark > a{
+.neodark > a{
 margin: 2%;
 font-size: 5em;
 
 transition: 1s;
 }
 
-.dark > a:hover{
+.neodark > a:hover{
 color:white;
 transform:scale(1.1);
 }
 
-.dark:hover{
+.neodark:hover{
 background-color: rgb(24, 27, 29);
 }
 
-.dark > button{
+.neodark > button{
   font-size: 3rem;
   font: inherit;
   padding: 0.5rem 1.5rem;
@@ -183,18 +182,19 @@ background-color: rgb(24, 27, 29);
   background-color: #800040;
   color: white;
   border: 1px solid #800040;
-  
+  margin:10%;
+    padding: 1%;
 }
 
 
 
 
-.dark >button:hover {
+.neodark >button:hover {
   background-color: #9c1458;
   border-color: #9c1458;
 }
 
-.light > button{
+.neolight > button{
   font-size: 3rem;
   font: inherit;
   padding: 0.5rem 1.5rem;
@@ -203,14 +203,15 @@ background-color: rgb(24, 27, 29);
   background-color: #c70667;
   color: white;
   border: 1px solid #800040;
+  margin:10%;
+    padding: 1%;
   
 }
 
 
 
 
-.light >button:hover {
+.neolight >button:hover {
   background-color: #d32d80;
   border-color: #ffffff;
 }
-

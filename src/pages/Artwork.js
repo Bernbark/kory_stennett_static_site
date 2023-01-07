@@ -52,14 +52,14 @@ function ArtworkPage(props){
                         </Card>
                         <Card classNameToGive={props.classNameToGive}>               
                                 <h2>Acorn Enemy</h2>
-                                <p>Just a silly enemy design for a card game I was making.</p>
+                                <p>Just a silly enemy design for a card game called Card Battlers which is a WIP.</p>
                                 <ImageSlot>
                                     <img className={imageStyles.gallery} src={acorn} alt="My Pic Should Be Here..." />
                                 </ImageSlot>
                         </Card>   
                         <Card classNameToGive={props.classNameToGive}>
                             <h2>Beam Attack</h2>
-                            <p>One of the attacks I made for my first game ever. It was a platformer that I used to learn Unity with, so the project never received a real name and was not completed.</p>
+                            <p>One of the attacks I made for my first game ever. It was a project that I used to learn Unity with!</p>
                             <ImageSlot>
                                     <img className={imageStyles.gallery} src={beam} alt="My Pic Should Be Here..." />
                             </ImageSlot>
@@ -68,7 +68,7 @@ function ArtworkPage(props){
                     <TwoFrameCard>
                         <Card classNameToGive={props.classNameToGive}>
                             <h2>Blood Acolyte</h2>
-                            <p>These guys were sort of your followers in Custom Tower Defense, a game I never quite finished...</p>
+                            <p>These guys were sort of your followers in Custom Tower Defense, a large scope project which I return to from time to time.</p>
                             <ImageSlot>
                                     <img className={imageStyles.gallery} src={acolyte} alt="My Pic Should Be Here..." />
                                 </ImageSlot>
@@ -82,7 +82,7 @@ function ArtworkPage(props){
                         </Card>
                         <Card classNameToGive={props.classNameToGive}> 
                             <h2>Card Back</h2>
-                            <p>My design for the backs of cards in that long forgotten card game.</p>
+                            <p>My design for the backs of cards in Card Battlers.</p>
                             <ImageSlot>
                                     <img className={imageStyles.gallery} src={cBack} alt="My Pic Should Be Here..." />
                                 </ImageSlot>
@@ -91,7 +91,7 @@ function ArtworkPage(props){
                     <TwoFrameCard>
                         <Card classNameToGive={props.classNameToGive}>
                             <h2>Card Front</h2>
-                            <p>My design for the fronts of cards in that recently rememebered card game.</p>
+                            <p>My design for the fronts of cards in Card Battlers.</p>
                             <ImageSlot>
                                     <img className={imageStyles.gallery} src={cFront} alt="My Pic Should Be Here..." />
                                 </ImageSlot>
@@ -151,7 +151,7 @@ function ArtworkPage(props){
                 </Card>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Acorn Enemy</h2>
-                    <p>Just a silly enemy design for a card game I was making.</p>
+                    <p>Just a silly enemy design for a card game called Card Battlers which is a WIP.</p>
                     <ImageSlot>
                         <img className={css.gallery} src={acorn} alt="My Pic Should Be Here..." />
                     </ImageSlot>
@@ -161,7 +161,7 @@ function ArtworkPage(props){
                 <TwoFrameCard>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Beam Attack</h2>
-                    <p>One of the attacks I made for my first game ever. It was a platformer that I used to learn Unity with, so the project never received a real name and was not completed.</p>
+                    <p>One of the attacks I made for my first game ever. It was a project that I used to learn Unity with!</p>
                     <ImageSlot>
                         <img className={css.gallery} src={beam} alt="My Pic Should Be Here..." />
                     </ImageSlot>
@@ -170,7 +170,7 @@ function ArtworkPage(props){
 
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Blood Acolyte</h2>
-                    <p>These guys were sort of your followers in Custom Tower Defense, a game I never quite finished...</p>
+                    <p>These guys were sort of your followers in Custom Tower Defense, a large scope project which I return to from time to time.</p>
                     <ImageSlot>
                         <img className={css.gallery} src={acolyte} alt="My Pic Should Be Here..." />
                     </ImageSlot>
@@ -189,7 +189,7 @@ function ArtworkPage(props){
                 </Card>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Card Back</h2>
-                    <p>My design for the backs of cards in that long forgotten card game.</p>
+                    <p>My design for the backs of cards in Card Battlers.</p>
                     <ImageSlot>
                         <img className={css.gallery} src={cBack} alt="My Pic Should Be Here..." />
                     </ImageSlot>
@@ -200,7 +200,7 @@ function ArtworkPage(props){
                 <TwoFrameCard>
                 <Card classNameToGive={props.classNameToGive}>
                     <h2>Card Front</h2>
-                    <p>My design for the fronts of cards in that recently rememebered card game.</p>
+                    <p>My design for the fronts of cards in Card Battlers.</p>
                     <ImageSlot>
                         <img className={css.gallery} src={cFront} alt="My Pic Should Be Here..." />
                     </ImageSlot>
@@ -271,7 +271,7 @@ function ArtworkPage(props){
                     </Card>
                     <Card classNameToGive={props.classNameToGive}>
                         <h2>Acorn Enemy</h2>
-                        <p>Just a silly enemy design for a card game I was making.</p>
+                        <p>Just a silly enemy design for a card game called Card Battlers which is a WIP.</p>
                         <ImageSlot>
                             <img className={css.gallery} src={acorn} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -279,7 +279,7 @@ function ArtworkPage(props){
                     </Card>
                     <Card classNameToGive={props.classNameToGive}>
                         <h2>Beam Attack</h2>
-                        <p>One of the attacks I made for my first game ever. It was a platformer that I used to learn Unity with, so the project never received a real name and was not completed.</p>
+                        <p>One of the attacks I made for my first game ever. It was a project that I used to learn Unity with!</p>
                         <ImageSlot>
                             <img className={css.gallery} src={beam} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -288,7 +288,7 @@ function ArtworkPage(props){
 
                     <Card classNameToGive={props.classNameToGive}>
                         <h2>Blood Acolyte</h2>
-                        <p>These guys were sort of your followers in Custom Tower Defense, a game I never quite finished...</p>
+                        <p>These guys were sort of your followers in Custom Tower Defense, a large scope project which I return to from time to time.</p>
                         <ImageSlot>
                             <img className={css.gallery} src={acolyte} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -304,7 +304,7 @@ function ArtworkPage(props){
                     </Card>
                     <Card classNameToGive={props.classNameToGive}>
                         <h2>Card Back</h2>
-                        <p>My design for the backs of cards in that long forgotten card game.</p>
+                        <p>My design for the backs of cards in Card Battlers.</p>
                         <ImageSlot>
                             <img className={css.gallery} src={cBack} alt="My Pic Should Be Here..." />
                         </ImageSlot>
@@ -313,7 +313,7 @@ function ArtworkPage(props){
 
                     <Card classNameToGive={props.classNameToGive}>
                         <h2>Card Front</h2>
-                        <p>My design for the fronts of cards in that recently rememebered card game.</p>
+                        <p>My design for the fronts of cards in Card Battlers.</p>
                         <ImageSlot>
                             <img className={css.gallery} src={cFront} alt="My Pic Should Be Here..." />
                         </ImageSlot>

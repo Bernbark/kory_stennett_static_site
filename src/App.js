@@ -39,10 +39,7 @@ function App(props) {
     
     <Layout className={css.bottom} classNameToGive={theme} toggleTheme={toggleTheme}>
       
-            <button className={css.themeButton} onClick={event => {
-                                    toggleTheme();
-                                    
-                                }}>Toggle Theme</button>
+            
             
       <Routes>
         

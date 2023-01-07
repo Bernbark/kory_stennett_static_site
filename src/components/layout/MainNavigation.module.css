@@ -1,6 +1,9 @@
 a{
   color: #ffffff;
 }
+*{
+  transition: 1s;
+}
 .header {
     width: 100%;
     height: 5rem;
@@ -430,6 +433,7 @@ a{
     color: black;
     
 }
+
 
 .bottom {
   flex-grow: 1;

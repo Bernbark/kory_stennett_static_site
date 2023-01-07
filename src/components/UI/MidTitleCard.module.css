@@ -1,7 +1,7 @@
 .midTitleCard {
     background-color: rgb(0, 171, 238);
     border-radius: 6px;
-    box-shadow:3px 5px rgba(4, 69, 71, 0.521) ;
+    box-shadow:-15px 10px 0px 0px rgb(255, 255, 255) ;
     
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +13,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    transition: 1s;
   }
 
 .midTitleCard > h1{
@@ -35,8 +36,8 @@
 .midTitleCardDark {
   background-color: rgb(0, 0, 0);
   border-radius: 6px;
-  box-shadow:3px 5px rgba(4, 69, 71, 0.521) ;
-  
+  box-shadow:-15px 10px 0px 0px rgb(255, 4, 234) ;
+  transition: 1s;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -47,6 +48,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  
 }
 
 .midTitleCardDark > h1{

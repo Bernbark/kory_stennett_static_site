@@ -35,7 +35,7 @@ function MainNavigation(props) {
 
     const toggleTheme = props.toggleTheme;
     
-       
+    const resume = "Resum"  
     var bgColors = { "Default": "#81b71a",
                     "Purple": "#B967FF",
                     "Blue": "#01CDFE",
@@ -60,171 +60,206 @@ function MainNavigation(props) {
                 {isDesktopOrLaptop && <header className={css.headerDark}>
                     <GlitchButton classNameToGive={props.classNameToGive}>
                         
-                        Portfolio
+                        <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav >
                         <ul>
                             <li >
-                                <LinkSlot >
-                                    <div >
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot >
-                                    <div> 
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li > 
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot >
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
                            
+                           </li>
                         </ul>
                     </nav>
                 </header>}
                 
                 {isSmall && <header className={css.headerPortraitDark}>
                     <GlitchButton classNameToGive={props.classNameToGive}>
-                        Portfolio
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
                             <li >
-                                <LinkSlot >
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
+                           
+                           </li>
                         </ul>
                     </nav>
                 </header>}
                 {isTiny && <header className={css.headerTinyDark}>
                     <GlitchButton classNameToGive={props.classNameToGive}>
-                        Portfolio
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
+                           
+                           </li>
                         </ul>
                     </nav>
                 </header>}
                 {isMiniscule && <header className={css.headerMiniDark}>
                     <GlitchButton classNameToGive={props.classNameToGive}>
-                        Portfolio
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
                             <Card classNameToGive={props.classNameToGive}>
                             <li >
                                 
-                                <LinkSlot >
-                                    <div >
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div > 
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             </Card>
                             <Card classNameToGive={props.classNameToGive}>
                             <li >
-                                <LinkSlot >
-                                    <div >
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div >
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
                                         <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
+                           
+                           </li>
                             </Card>
                             
                         </ul>
@@ -242,173 +277,209 @@ function MainNavigation(props) {
             <div>
                 
                 {isDesktopOrLaptop && <header className={css.header}>
-                    <GlitchButton>
+                    <GlitchButton classNameToGive={props.classNameToGive}>
                         
-                        Portfolio
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav >
                         <ul>
                             <li >
-                                <LinkSlot >
-                                    <div >
-                                        <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link  to='/home'>Home</Link>
+                                    
                                     
                                 </LinkSlot>
                                 
+
                             </li>
                             <li >
-                                <LinkSlot >
-                                    <div> 
-                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/projects'>Projects</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li > 
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/favorites'>Faves</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot >
-                                    <div>
-                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/artwork'>"Art"</Link>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                <button className={css.themeButton} onClick={event => {
+                                    toggleTheme();
+                                    
+                                }}>Toggle Theme</button>
+                                </LinkSlot>
                            
+                           </li>
                         </ul>
                     </nav>
                 </header>}
                 
                 {isSmall && <header className={css.headerPortrait}>
-                    <GlitchButton>
-                        Portfolio
+                    <GlitchButton classNameToGive={props.classNameToGive}>
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
                             <li >
-                                <LinkSlot >
-                                    <div>
-                                        <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/home'>Home</Link>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/projects'>Projects</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/favorites'>Faves</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/artwork'>"Art"</Link>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
+                           
+                           </li>
                         </ul>
                     </nav>
                 </header>}
                 {isTiny && <header className={css.headerTiny}>
-                    <GlitchButton>
-                        Portfolio
+                    <GlitchButton classNameToGive={props.classNameToGive}>
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/home'>Home</Link>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/projects'>Projects</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/favorites'>Faves</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div>
-                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/artwork'>"Art"</Link>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
+                           
+                           </li>
                         </ul>
                     </nav>
                 </header>}
                 {isMiniscule && <header className={css.headerMini}>
-                    <GlitchButton>
-                        Portfolio
+                    <GlitchButton classNameToGive={props.classNameToGive}>
+                    <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
                     <nav>
                         <ul>
-                            <Card>
+                            <Card classNameToGive={props.classNameToGive}>
                             <li >
                                 
-                                <LinkSlot >
-                                    <div >
-                                        <Link style={{color: "white"}} to='/home'>Home</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/home'>Home</Link>
+                                    
                                     
                                 </LinkSlot>
                                 
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div > 
-                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/projects'>Projects</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
-                            </Card>
-                            <Card>
+                            </Card >
+                            <Card classNameToGive={props.classNameToGive}>
                             <li >
-                                <LinkSlot >
-                                    <div >
-                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/favorites'>Faves</Link>
+                                    
                                     
                                 </LinkSlot>
                             </li>
                             <li >
-                                <LinkSlot>
-                                    <div >
-                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
-                                    </div>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    
+                                        <Link to='/artwork'>"Art"</Link>
+                                    
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButton} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Toggle Theme</button>
+                                </LinkSlot>
+                           
+                           </li>
                             </Card>
                             
                         </ul>

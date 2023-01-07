@@ -8,6 +8,7 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 import { withRouter } from 'react-router'
 import { useMediaQuery } from 'react-responsive'
 import MidTitleCard from '../components/UI/MidTitleCard';
+import NeoCard from '../components/UI/NeoCard';
 function ProjectsPage (props){
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1782px)'
@@ -83,13 +84,13 @@ function ProjectsPage (props){
               </h1></MidTitleCard>
             <TwoFrameCard>
               <Card classNameToGive={classNameString}>
-                <h3>Okay so these games aren't exactly polished, but I do have some playable prototypes up on Itch.io for anyone to check out!</h3>
+                <h3>These are WIPs, but I do have some playable prototypes up on Itch.io for anyone to check out!</h3>
               </Card>
               <Card classNameToGive={classNameString}>
-                <LinkSlot>
-                  <div>
+                <LinkSlot classNameToGive={classNameString}>
+                  
                   <a href='https://bernbark.itch.io/'>Itch Collection</a>
-                  </div>
+                  
                   
                 </LinkSlot>
               </Card>
@@ -98,47 +99,48 @@ function ProjectsPage (props){
             
             <section>
             
-                    <Card classNameToGive={classNameString}>
-                        <h2>
-                            External Links
-                            
-                        </h2>
-                    </Card>
-                        <Warning>
-                        <LinkSlot>
-                            <div>
-                            <a href='http://database-fun.herokuapp.com/'>Leave a Message!</a>
-                            </div>
-                            
-                        </LinkSlot>
-                        </Warning>
-                        <Warning>
-                        <LinkSlot>
-                            <div>
-                            <a href='https://github.com/Bernbark'>Personal Github</a>
-                            </div>
-                            
-                        </LinkSlot>
-                        
-                        </Warning>
-                        <Warning>
-                        <LinkSlot>
-                            <div>
-                            <a href='https://github.com/BernbarkProfessional'>Secondary Github</a>
-                            </div>
-                            
-                        </LinkSlot>
-                        
-                        </Warning>
                     
-                        <Warning>
-                        <LinkSlot>
-                            <div>
-                            <a href='https://bernbarkprofessional.github.io/'>Experimental Website</a>
-                            </div>
+                    <NeoCard classNameToGive={classNameString}>
+                      <Card classNameToGive={classNameString}>
+                          <h2>
+                              External Links
+                              
+                          </h2>
+                      </Card>
+                        <LinkSlot classNameToGive={classNameString}>
+                            
+                            <a href='http://database-fun.herokuapp.com/'>Leave a Message!</a>
+                            
                             
                         </LinkSlot>
-                        </Warning>
+                        <br></br>
+                        <LinkSlot classNameToGive={classNameString}>
+                            
+                            <a href='https://github.com/Bernbark'>Personal Github</a>
+                            
+                            
+                        </LinkSlot>
+                        
+                        <br></br>
+                        <LinkSlot classNameToGive={classNameString}>
+                            
+                            <a href='https://github.com/BernbarkProfessional'>Secondary Github</a>
+                            
+                            
+                        </LinkSlot>
+                        
+                        
+                        <br></br>
+                        
+                        <LinkSlot classNameToGive={classNameString}>
+                            
+                            <a href='https://bernbarkprofessional.github.io/'>Experimental Website</a>
+                            
+                            
+                        </LinkSlot>
+                        
+                    </NeoCard>
+                        
                     
             </section>
             
