@@ -169,7 +169,7 @@ function MainNavigation(props) {
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link style={{color: "white"}} to='/home'>Home</Link>
+                                        <Link to='/home'>Home</Link>
                                     
                                     
                                 </LinkSlot>
@@ -178,7 +178,7 @@ function MainNavigation(props) {
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
+                                        <Link to='/projects'>Projects</Link>
                                     
                                     
                                 </LinkSlot>
@@ -186,7 +186,7 @@ function MainNavigation(props) {
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
+                                        <Link to='/favorites'>Faves</Link>
                                     
                                     
                                 </LinkSlot>
@@ -194,7 +194,7 @@ function MainNavigation(props) {
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
+                                        <Link to='/artwork'>"Art"</Link>
                                     
                                 </LinkSlot>
                             </li>

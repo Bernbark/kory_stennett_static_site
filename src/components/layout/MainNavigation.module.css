@@ -11,7 +11,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(76, 135, 184);
-    padding: 0 10%;
+    padding: 0 1%;
   }
   
   .logo {
@@ -29,7 +29,7 @@ a{
   }
   
   .header li {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   
   .header a {
@@ -92,7 +92,8 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(76, 135, 184);
-    padding: 0 10%;
+    padding: 0px 1%;
+    
   }
   
   .logoPortrait {
@@ -110,7 +111,7 @@ a{
   }
   
   .headerPortrait li {
-    margin-left: 3rem;
+    margin-left: 1rem;
     font-size: .8rem;
   }
   
@@ -133,7 +134,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(76, 135, 184);
-    padding: 0 10%;
+    padding: 0 0%;
   }
   
   .logoTiny {
@@ -169,12 +170,12 @@ a{
 
   .headerMini {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(76, 135, 184);
-    text-align: justify;
+    
   }
   
   .logoMini {
@@ -185,18 +186,19 @@ a{
   
   .headerMini ul {
     list-style: none;
-    
+    margin: 0;
     padding: 0;
+    
     display: flex;
     align-items: baseline;
     content: "";
   
-  width: 100%;
+  
   }
   
   .headerMini li {
     
-    text-align:justify;
+    
     font-size: .1rem;
   }
   
@@ -221,7 +223,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark-bg-color);
-    padding: 0 10%;
+    padding: 0 1%;
   }
   
   .logoDark {
@@ -239,7 +241,7 @@ a{
   }
   
   .headerDark li {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   
   .headerDark a {
@@ -302,7 +304,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark-bg-color);
-    padding: 0 10%;
+    padding: 0 1%;
   }
   
   .logoPortraitDark {
@@ -320,7 +322,7 @@ a{
   }
   
   .headerPortraitDark li {
-    margin-left: 3rem;
+    margin-left: 1rem;
     font-size: .8rem;
   }
   
@@ -343,7 +345,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark-bg-color);
-    padding: 0 10%;
+    padding: 0 0%;
   }
   
   .logoTinyDark {
@@ -379,7 +381,7 @@ a{
 
   .headerMiniDark {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -430,17 +432,19 @@ a{
   .themeButton{
 
     position: 'absolute';
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
    
     color: black;
     border:none;
 }
 
+  
+
 .themeButtonSmall{
 
   
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
  
   color: black;
@@ -450,7 +454,7 @@ a{
 .themeButtonTiny{
 
   position: 'absolute';
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
  
   color: black;
@@ -464,9 +468,7 @@ a{
   line-height: 130%;
   color: black;
   border:none;
-  content: "";
-  display: inline-block;
-  width: 100%;
+  
 }
 
 .bottom {

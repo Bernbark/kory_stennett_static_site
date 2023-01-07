@@ -9,8 +9,8 @@
     
     text-align: center;
     margin: 1%;
-    padding:1px;
-    margin: auto;
+    padding:0px;
+    
     overflow-x: hidden;
   }
 
@@ -73,8 +73,8 @@
   text-align: center;
   
   margin: 1%;
-    padding:1px;
-  margin: auto;
+    padding:0px;
+  
   overflow-x: hidden;
 }
 

@@ -51,7 +51,7 @@
     color: #fff;
     letter-spacing: 5px;
     
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgb(0, 0, 0) 10px 15px 0px;
     text-shadow: 1px 0px 0px #dd1bb3;
     outline: transparent;
     position: relative;
