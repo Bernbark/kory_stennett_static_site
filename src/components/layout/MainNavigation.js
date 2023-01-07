@@ -431,7 +431,6 @@ function MainNavigation(props) {
                     </nav>
                 </header>}
                 {isMiniscule && <header className={css.headerMini}>
-                    <TwoFrameCard>
                     <GlitchButton classNameToGive={props.classNameToGive}>
                     <a href="https://docs.google.com/document/d/1FuHNFoHAQAR9O71M0X-bYvt64PKxeqGm40HBqirFD9Y/edit?usp=sharing">{resume}&ecirc;</a> 
                     </GlitchButton>
@@ -442,7 +441,7 @@ function MainNavigation(props) {
                                 
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link to='/home'>Home</Link>
+                                        <Link style={{color: "white"}} to='/home'>Home</Link>
                                     
                                     
                                 </LinkSlot>
@@ -451,16 +450,17 @@ function MainNavigation(props) {
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link to='/projects'>Projects</Link>
+                                        <Link style={{color: "white"}} to='/projects'>Projects</Link>
                                     
                                     
                                 </LinkSlot>
                             </li>
                             
+                            
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link to='/favorites'>Faves</Link>
+                                        <Link style={{color: "white"}} to='/favorites'>Faves</Link>
                                     
                                     
                                 </LinkSlot>
@@ -468,16 +468,23 @@ function MainNavigation(props) {
                             <li >
                                 <LinkSlot classNameToGive={props.classNameToGive}>
                                     
-                                        <Link to='/artwork'>"Art"</Link>
+                                        <Link style={{color: "white"}} to='/artwork'>"Art"</Link>
                                     
                                 </LinkSlot>
                             </li>
+                            <li>
+                                <LinkSlot classNameToGive={props.classNameToGive}>
+                                    <button className={css.themeButtonMini} onClick={event => {
+                                        toggleTheme();
+                                        
+                                    }}>Theme</button>
+                                </LinkSlot>
                            
+                           </li>
                             
                             
                         </ul>
                     </nav>
-                    </TwoFrameCard>
                 </header>}
             </div>);
             

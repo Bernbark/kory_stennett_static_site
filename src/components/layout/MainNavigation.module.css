@@ -174,7 +174,7 @@ a{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(76, 135, 184);
-    
+    text-align: justify;
   }
   
   .logoMini {
@@ -185,11 +185,13 @@ a{
   
   .headerMini ul {
     list-style: none;
-    margin: 0;
+    
     padding: 0;
     display: flex;
     align-items: baseline;
-    
+    content: "";
+  
+  width: 100%;
   }
   
   .headerMini li {
@@ -456,12 +458,15 @@ a{
 }
 
 .themeButtonMini{
-  flex-grow: 1;
+  
   font-size: 3.4em;
   font-weight: 800;
   line-height: 130%;
   color: black;
   border:none;
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 .bottom {

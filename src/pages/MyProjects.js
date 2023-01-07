@@ -81,34 +81,22 @@ function ProjectsPage (props){
             </TitleCard>
             
             <Card classNameToGive={classNameString}>
-            <MidTitleCard classNameToGive={classNameString}><h1>
-              Itch Titles
-              </h1></MidTitleCard>
-            <TwoFrameCard classNameToGive={classNameString}>
+            <MidTitleCard classNameToGive={classNameString}>
+                          <h1>
+                              External Links
+                              
+                          </h1>
+                      </MidTitleCard>
+            <NeoCard classNameToGive={classNameString}>
               <Card classNameToGive={classNameString}>
-                <h3>These are WIPs, but I do have some playable prototypes up on Itch.io for anyone to check out!</h3>
+                <h3>Here is a collection of some of my past works, including GitHub portfolios, a second, more experimental website, and my prototype game collection on Itch.io!</h3>
               </Card>
-              <NeoCard classNameToGive={classNameString}>
-                <LinkSlot classNameToGive={classNameString}>
-                  
-                  <a href='https://bernbark.itch.io/'>Itch Collection</a>
-                  
-                  
-                </LinkSlot>
-              </NeoCard>
-            </TwoFrameCard>
-            </Card>
-            
-            <Column classNameToGive={classNameString}>
+              
+              <Column classNameToGive={classNameString}>
             
                     
                     <NeoCard classNameToGive={classNameString}>
-                      <Card classNameToGive={classNameString}>
-                          <h2>
-                              External Links
-                              
-                          </h2>
-                      </Card>
+                      
                         <LinkSlot classNameToGive={classNameString}>
                             
                             <a href='http://database-fun.herokuapp.com/'>Leave a Message!</a>
@@ -140,11 +128,21 @@ function ProjectsPage (props){
                             
                             
                         </LinkSlot>
-                        
+                        <br></br>
+                        <LinkSlot classNameToGive={classNameString}>
+                  
+                          <a href='https://bernbark.itch.io/'>Itch Collection</a>
+                          
+                          
+                        </LinkSlot>
                     </NeoCard>
                         
                     
             </Column>
+            </NeoCard>
+            </Card>
+            
+            
             
             
             

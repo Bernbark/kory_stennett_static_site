@@ -1,7 +1,7 @@
 .light {
     background-color: rgb(76, 135, 184);
     border-radius: 6px;
-    min-width: 300px;
+    
     box-shadow: 10px 0px 0px 0px rgb(251, 255, 0),-10px 0px 0px 0px rgb(123, 255, 0);
     align-items: center;
     display: flex;
@@ -15,7 +15,7 @@
     justify-content: center;
     transition: 1s;
     vertical-align: middle;
-    
+    object-fit: contain;
   }
 
 .light > img{
