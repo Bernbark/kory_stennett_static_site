@@ -48,7 +48,7 @@ function HomePage(props){
 
                     <p>It's time for me to get serious about creating a presence for myself while applying for positions.
                         I believe that building this website will help give a human element to the applications I send, and I hope that someone sees this and can tell just how hard I am trying to get my foot in the door of this exciting field.</p>
-                    <NeoCard>
+                    <NeoCard classNameToGive={classNameString}>
                         <p>I am here both as a learner and as someone who genuinely enjoys crafting programs to do my bidding. I have interests in:</p>
                         <ul>
                             <li>
@@ -74,7 +74,7 @@ function HomePage(props){
                             </li>
                         </ul>
                     </NeoCard>
-                    <Card>
+                    <Card classNameToGive={classNameString}>
                         <p>I decided to become a programmer while already attending college, and so far it has been an awesome experience! Sure, sometimes the bugs can be frustrating, 
                             but the overall good feeling that comes from making something work the way I intended is hard to beat.
                         </p>
@@ -88,7 +88,7 @@ function HomePage(props){
                         </p>
                         
                     </Card>
-                    <NeoCard>
+                    <NeoCard classNameToGive={classNameString}>
                         <p>Feel free to leave me a message by clicking the link below, you don't need to leave a real email address, it sends the message to a personal MongoDB collection. 
                             Alternatively you can contact me at korystennett@gmail.com</p>
                         <p></p>
