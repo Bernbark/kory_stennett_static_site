@@ -2,15 +2,15 @@
     margin: 1%;
     padding: 0%;
     display: flex;
-    border:solid darkgreen 8px;
+    border:solid darkgreen 2px;
     border-radius: 20px;
-    box-shadow: 5px 0 0 0 darkgreen;
+    box-shadow: 5px 5px 0 0 darkgreen;
     flex-direction: column;
     width: 90%;
     font-size: 1.1em;
     max-height: 30vh;
     overflow: scroll;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .columnLight{
@@ -18,7 +18,7 @@
     padding: 0%;
     display: flex;
     border-radius: 20px;
-    border:solid darkgreen 8px;
+    border:solid darkgreen 2px;
     box-shadow: 5px 5px 0 0 darkgreen;
     flex-direction: column;
     width: 90%;
@@ -26,8 +26,30 @@
     font-weight: 600;
     max-height: 30vh;
     overflow: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 30px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 .columnLight > ul img{
     max-width: 100%;

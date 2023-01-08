@@ -10,8 +10,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(10, 89, 155);
+    background-color: rgb(211, 211, 211);
     padding: 0 1%;
+    background-image: url("../../Images/header_image.png");
   }
   
   .logo {
@@ -222,8 +223,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-bg-color);
+   
+    background-color: rgb(211, 211, 211);
     padding: 0 1%;
+    background-image: url("../../Images/header_image.png");
   }
   
   .logoDark {
@@ -479,4 +482,5 @@ a{
 
 :root {
   --dark-bg-color: rgb(0, 0, 0);
+  
 }

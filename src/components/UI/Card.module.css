@@ -1,5 +1,5 @@
 .light {
-  background-color: rgb(10, 89, 155);
+  background-color: rgb(126, 180, 224);
     border-radius: 6px;
     
     box-shadow: 1px 1px 0px 0px rgb(255, 238, 0);
@@ -15,7 +15,11 @@
     justify-content: center;
     transition: 1s;
     vertical-align: middle;
-    object-fit: contain;
+    
+    background-image: url("../../Images/etch_card.png");
+    background-repeat: none;
+    background-size: 80% ;
+    image-rendering:crisp-edges;
   }
 
 .light > img{

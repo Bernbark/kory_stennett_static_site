@@ -141,7 +141,7 @@ function FavoritesPage(props) {
             <Card classNameToGive={props.classNameToGive}>
                 <MidTitleCard classNameToGive={props.classNameToGive}><h1>Found the Coolest Friends: February 2020</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                     
                     <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>{friendMessage.title}</h2>
@@ -234,7 +234,7 @@ function FavoritesPage(props) {
                 
                 <MidTitleCard classNameToGive={props.classNameToGive}><h1>Overwatch Love: September, 2022</h1></MidTitleCard>
                 {isDesktopOrLaptop && 
-                <TwoFrameCard>
+                <TwoFrameCard classNameToGive={props.classNameToGive}>
                     
                     <FlipCard classNameToGive={props.classNameToGive} backMessage={<Card classNameToGive={props.classNameToGive}>
                         <h2>Oh Overwatch...</h2>
