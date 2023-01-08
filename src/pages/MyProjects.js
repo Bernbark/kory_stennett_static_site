@@ -10,6 +10,7 @@ import { useMediaQuery } from 'react-responsive'
 import MidTitleCard from '../components/UI/MidTitleCard';
 import NeoCard from '../components/UI/NeoCard';
 import Column from '../components/UI/Column';
+import ThreeColumnHolder from '../components/UI/ThreeColumnHolder';
 function ProjectsPage (props){
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1782px)'
@@ -79,7 +80,7 @@ function ProjectsPage (props){
                     Projects
                 </h1>
             </TitleCard>
-            <Card classNameToGive={classNameString}>
+            <ThreeColumnHolder col1={classNameString}>
             <MidTitleCard classNameToGive={classNameString}>
                           <h1>
                               Android Studio
@@ -93,7 +94,7 @@ function ProjectsPage (props){
                         </li>
                       </ul>
                     </Column>
-            </Card>
+            </ThreeColumnHolder>
             <Card classNameToGive={classNameString}>
             <MidTitleCard classNameToGive={classNameString}>
                           <h1>
