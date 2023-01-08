@@ -263,7 +263,7 @@ function ArtworkPage(props){
                 
             {isSmall &&
                 
-                    <Column>
+                    <div>
                     <Card classNameToGive={props.classNameToGive}>
                         <h2 style={{fontSize:' 1.9em'}}>Simple Spaceship</h2>
                         <p style={{fontSize:'1.1em'}}>This fine looking pixelated mess is normally displayed much smaller, and has been used in several of my Unity projects! Simple pixel art like this reminds me of Mario Paint from the SNES.</p>
@@ -364,7 +364,7 @@ function ArtworkPage(props){
                         </ImageSlot>
                         
                     </Card>
-                    </Column>
+                    </div>
                     
                 
                 
