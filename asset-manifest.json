@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/kory_stennett_static_site/static/css/main.34999de6.css",
-    "main.js": "/kory_stennett_static_site/static/js/main.44b37885.js",
+    "main.css": "/kory_stennett_static_site/static/css/main.5d4947a4.css",
+    "main.js": "/kory_stennett_static_site/static/js/main.7a354b94.js",
     "static/media/roadsplitter mag.jpg": "/kory_stennett_static_site/static/media/roadsplitter mag.bf4a966ba359c5be1b9a.jpg",
     "static/media/blood_acolyte.png": "/kory_stennett_static_site/static/media/blood_acolyte.1210b4b35279579f0333.png",
     "static/media/Relic_of_OW.PNG": "/kory_stennett_static_site/static/media/Relic_of_OW.5ab104388d2ff84bf90e.PNG",
     "static/media/mikey.PNG": "/kory_stennett_static_site/static/media/mikey.ea417b9aecf43b77adfb.PNG",
     "static/media/final project.jpg": "/kory_stennett_static_site/static/media/final project.f8c034e058d10d1e4965.jpg",
     "static/media/My_Pic.jpg": "/kory_stennett_static_site/static/media/My_Pic.bc3f10d308937204e4bb.jpg",
+    "static/media/etch_card.png": "/kory_stennett_static_site/static/media/etch_card.d15f99cc70dedf24a498.png",
     "static/media/Card_Back.png": "/kory_stennett_static_site/static/media/Card_Back.11939c65819c5f4980ed.png",
     "static/media/beam_4.png": "/kory_stennett_static_site/static/media/beam_4.4fb62f6df850c7288421.png",
+    "static/media/header_image.png": "/kory_stennett_static_site/static/media/header_image.239d00a78c4cd219515c.png",
+    "static/media/etch_titleimage.png": "/kory_stennett_static_site/static/media/etch_titleimage.4041c6ccc0ea5fd7bd23.png",
     "static/media/me_and_the_boiz.jpg": "/kory_stennett_static_site/static/media/me_and_the_boiz.52c3aad23ca6e6cabd0d.jpg",
     "static/media/myfushy.JPG": "/kory_stennett_static_site/static/media/myfushy.2f37213eae8a8bde535f.JPG",
     "static/media/sunroof.jpg": "/kory_stennett_static_site/static/media/sunroof.531e87d48d617ec4f3f1.jpg",
@@ -20,11 +23,11 @@
     "static/media/android_code_1.PNG": "/kory_stennett_static_site/static/media/android_code_1.6754c8900128c23eb69c.PNG",
     "static/media/android_1.PNG": "/kory_stennett_static_site/static/media/android_1.13d0cfd9e27e5a303d79.PNG",
     "index.html": "/kory_stennett_static_site/index.html",
-    "main.34999de6.css.map": "/kory_stennett_static_site/static/css/main.34999de6.css.map",
-    "main.44b37885.js.map": "/kory_stennett_static_site/static/js/main.44b37885.js.map"
+    "main.5d4947a4.css.map": "/kory_stennett_static_site/static/css/main.5d4947a4.css.map",
+    "main.7a354b94.js.map": "/kory_stennett_static_site/static/js/main.7a354b94.js.map"
   },
   "entrypoints": [
-    "static/css/main.34999de6.css",
-    "static/js/main.44b37885.js"
+    "static/css/main.5d4947a4.css",
+    "static/js/main.7a354b94.js"
   ]
 }
