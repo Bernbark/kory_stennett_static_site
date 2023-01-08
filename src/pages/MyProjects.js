@@ -1,11 +1,8 @@
 import TitleCard from '../components/UI/TitleCard';
 import Card from '../components/UI/Card';
-import TwoFrameCard from '../components/UI/TwoFrameCard';
 import LinkSlot from '../components/UI/LinkSlot';
-import Warning from '../components/UI/Warning';
 import React, { useState, useEffect, useCallback, Component } from "react";
-import { Unity, useUnityContext } from "react-unity-webgl";
-import { withRouter } from 'react-router'
+import {  useUnityContext } from "react-unity-webgl";
 import { useMediaQuery } from 'react-responsive'
 import MidTitleCard from '../components/UI/MidTitleCard';
 import NeoCard from '../components/UI/NeoCard';
@@ -36,89 +33,50 @@ function ProjectsPage (props){
   const [androidModal1, setIsOpen1] = React.useState(false);
   const [androidModal2, setIsOpen2] = React.useState(false);
   const [androidModal3, setIsOpen3] = React.useState(false);
-function openModal1() {
-  setIsOpen1(true);
-}
+  function openModal1() {
+    setIsOpen1(true);
+  }
 
-function closeModal1() {
-  setIsOpen1(false);
-}
+  function closeModal1() {
+    setIsOpen1(false);
+  }
 
-function openModal2() {
-  setIsOpen2(true);
-}
+  function openModal2() {
+    setIsOpen2(true);
+  }
 
-function closeModal2() {
-  setIsOpen2(false);
-}
-function openModal3() {
-  setIsOpen3(true);
-}
+  function closeModal2() {
+    setIsOpen2(false);
+  }
+  function openModal3() {
+    setIsOpen3(true);
+  }
 
-function closeModal3() {
-  setIsOpen3(false);
-}
+  function closeModal3() {
+    setIsOpen3(false);
+  }
 
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 800px)'
   })
   const isBigScreen = useMediaQuery({ query: '(min-width: 1201px)' })
-  //onst isTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
-  
   const isSmall = useMediaQuery({ query: '(max-width: 799px)' })
-  
-    const { unityProvider, unload, isLoaded, loadingProgression  } = useUnityContext({
-        loaderUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.loader.js",
-        dataUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.data",
-        frameworkUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.framework.js",
-        codeUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.wasm",
-        webglContextAttributes: {
-            preserveDrawingBuffer: true,
-          },
-      });
 
-      const [devicePixelRatio, setDevicePixelRatio] = useState(
+  const { unityProvider, unload, isLoaded, loadingProgression  } = useUnityContext({
+      loaderUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.loader.js",
+      dataUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.data",
+      frameworkUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.framework.js",
+      codeUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.wasm",
+      webglContextAttributes: {
+          preserveDrawingBuffer: true,
+        },
+    });
+
+  const [devicePixelRatio, setDevicePixelRatio] = useState(
     window.devicePixelRatio
   );
   
   const classNameString = props.classNameToGive;
-      const handleChangePixelRatio = useCallback(
-        function () {
-          // A function which will update the device pixel ratio of the Unity
-          // Application to match the device pixel ratio of the browser.
-          const updateDevicePixelRatio = function () {
-            setDevicePixelRatio(window.devicePixelRatio);
-          };
-          // A media matcher which watches for changes in the device pixel ratio.
-          const mediaMatcher = window.matchMedia(
-            `screen and (resolution: ${devicePixelRatio}dppx)`
-          );
-          // Adding an event listener to the media matcher which will update the
-          // device pixel ratio of the Unity Application when the device pixel
-          // ratio changes.
-          mediaMatcher.addEventListener("change", updateDevicePixelRatio);
-          return function () {
-            // Removing the event listener when the component unmounts.
-            mediaMatcher.removeEventListener("change", updateDevicePixelRatio);
-          };
-        },
-        [devicePixelRatio]
-      );
-
-      /**
-       * <TwoFrameCard>
-              {isBigScreen && <div>
-                <p>Loading Application... {Math.round(loadingProgression * 100)}%</p>
-              <Unity unityProvider={unityProvider} style={{ width: 1200, height: 800, visibility: isLoaded ? "visible" : "hidden" }} devicePixelRatio={devicePixelRatio}/>
-              </div>}
-              {isSmall && <h1>Try playing on a larger screen for this game to appear here!</h1>}
-                <Card><h2>Pinball Roguelite</h2><br></br><h3>***NOTE***<br></br>This game will continue running while you are on the site, and this is not intentional. Working on a fix, sorry!
-                in the meantime, you'll have to do a site refresh to get it to stop running in the background. 
-                <br></br><br></br>This is a really rough first draft of a pinball styled roguelite game.<br></br>It's made in 3D but is topdown which
-                allows for some more fluid movement using Rigidbody.AddForce() and allowing the player to speed up or slow down by adding velocity to its rigidbody, instead of
-                the 2D method, where the objects are essentially "teleporting" from one pixel to the next.</h3></Card>
-            </TwoFrameCard>
-       */
       
     return <div >
         <div>
@@ -256,16 +214,20 @@ function closeModal3() {
                       </ul>
                     </Column>
                   }
+
+
+                  /* column 2 */
+
+
                   col2={<Column>
                     <MidTitleCard classNameToGive={classNameString}>
                         <h1>
-                            Android Studio
+                            Placeholder
                             
                         </h1>
                     </MidTitleCard>
                     <ul style={{listStyle:'none'}}>
-                      <li>One of my favorite projects was an app called the SMARTPrototype, which was meant to help make difficult decisions easier by breaking them down into small parts,
-                        asking questions based on what's more important to the user, and then weighing those results with numbers the user can evaluate their options with.
+                      <li>Placeholder material, adding more project content soon!
                       </li>
                       <br></br>
                       <li>It's easier to show this project while explaining it, so let's explore a little bit.</li>
@@ -383,16 +345,20 @@ function closeModal3() {
                               <li>This was my first experience with Android Studio and overall a very fun project to make, especially since it can actually be useful in real life.</li>
                     </ul>
                   </Column>}
+
+
+                  /* column 3 */
+
+
                   col3={<Column>
                       <MidTitleCard classNameToGive={classNameString}>
                           <h1>
-                              Android Studio
+                              Placeholder
                               
                           </h1>
                       </MidTitleCard>
                       <ul style={{listStyle:'none'}}>
-                        <li>One of my favorite projects was an app called the SMARTPrototype, which was meant to help make difficult decisions easier by breaking them down into small parts,
-                          asking questions based on what's more important to the user, and then weighing those results with numbers the user can evaluate their options with.
+                        <li>More content coming very soon.
                         </li>
                         <br></br>
                         <li>It's easier to show this project while explaining it, so let's explore a little bit.</li>
@@ -574,10 +540,7 @@ function closeModal3() {
             </div>
             </NeoCard>
             </Card>
-            
-            
-            
-            
+      
             
         </div>
     </div>
