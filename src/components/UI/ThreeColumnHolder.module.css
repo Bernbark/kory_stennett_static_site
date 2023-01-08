@@ -1,11 +1,35 @@
-.col1{
+.colHolder{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    min-height: 40vh;
+    max-height: 40vh;
+    overflow: hidden;
+    margin: 2%;
+    padding: 1%;
+    background-color: rgb(193, 225, 193);
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 
+}
+.colHolder::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.col1{
+    min-width: 25%;
+    max-width: 25%;
+    
 }
 
 .col2{
-
+    min-width: 25%;
+    max-width: 25%;
+    
 }
 
 .col3{
-
+    min-width: 25%;
+    max-width: 25%;
+    
 }

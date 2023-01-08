@@ -5,10 +5,6 @@ function Column(props) {
     const classNameString = props.classNameToGive;
     let jSXElement = <div></div>;
     
-    
-    
-    
-    
     if(classNameString == "dark"){
         jSXElement= <div className={css.columnDark}>{props.children}</div>
     }

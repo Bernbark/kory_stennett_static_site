@@ -2,16 +2,44 @@
     margin: 1%;
     padding: 0%;
     display: flex;
-    
+    border:solid darkgreen 8px;
+    border-radius: 20px;
+    box-shadow: 5px 0 0 0 darkgreen;
     flex-direction: column;
     width: 90%;
+    font-size: 1.1em;
+    max-height: 30vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .columnLight{
     margin: 1%;
     padding: 0%;
     display: flex;
-    
+    border-radius: 20px;
+    border:solid darkgreen 8px;
+    box-shadow: 5px 5px 0 0 darkgreen;
     flex-direction: column;
     width: 90%;
+    font-size: 1.1em;
+    font-weight: 600;
+    max-height: 30vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.columnLight > ul img{
+    max-width: 100%;
+    image-rendering: auto;
+  
+  
+}
+
+
+
+.columnDark > ul img{
+    max-width: 90%;
+    image-rendering: auto;
+  
 }
