@@ -16,6 +16,7 @@ import android2 from '../Images/android_2.PNG';
 import androidCode1 from '../Images/android_code_1.PNG';
 import android4 from '../Images/android_4.PNG';
 import Modal from 'react-modal';
+import css from './MyModal.module.css';
 
 Modal.setAppElement(document.getElementById('root'));
     
@@ -59,12 +60,12 @@ function closeModal3() {
 }
 
   const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1782px)'
+    query: '(min-width: 800px)'
   })
   const isBigScreen = useMediaQuery({ query: '(min-width: 1201px)' })
   //onst isTabletOrMobile = useMediaQuery({ query: '(min-width: 1224px)' })
   
-  const isSmall = useMediaQuery({ query: '(max-width: 1200px)' })
+  const isSmall = useMediaQuery({ query: '(max-width: 799px)' })
   
     const { unityProvider, unload, isLoaded, loadingProgression  } = useUnityContext({
         loaderUrl: "kory_stennett_static_site/projects/#/UnityBuilds/Build.loader.js",
@@ -151,11 +152,12 @@ function closeModal3() {
                         </li>
                         <br></br>
                         <li><img src={android2}></img></li>
-                        <button onClick={openModal1}>Enlarge Image</button>
+                        {isDesktopOrLaptop && <button onClick={openModal1}>Enlarge Image</button>}
+                        
                         <br></br>
                         <Modal
                           isOpen={androidModal1}
-                          
+                          className={css.fitModal}
                           onRequestClose={closeModal1}
                           style={customStyles}
                           contentLabel="Android Example"
@@ -172,7 +174,7 @@ function closeModal3() {
                         </li>
                         <br></br>
                         <li><img src={androidCode1}></img></li>
-                        <button onClick={openModal2}>Enlarge Image</button>
+                        {isDesktopOrLaptop && <button onClick={openModal2}>Enlarge Image</button>}
                         <br></br>
                         <Modal
                           id='code1'
@@ -206,7 +208,7 @@ function closeModal3() {
                           </li>
                           <br></br>
                           <li><img src={android4}></img></li>
-                        <button onClick={openModal3}>Enlarge Image</button>
+                          {isDesktopOrLaptop && <button onClick={openModal3}>Enlarge Image</button>}
                         <br></br>
                         <Modal
                           isOpen={androidModal3}
