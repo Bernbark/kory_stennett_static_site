@@ -1,8 +1,8 @@
 .light {
-    background-color: rgb(76, 135, 184);
+  background-color: rgb(10, 89, 155);
     border-radius: 6px;
     
-    box-shadow: 10px 0px 0px 0px rgb(251, 255, 0),-10px 0px 0px 0px rgb(123, 255, 0);
+    box-shadow: 1px 1px 0px 0px rgb(255, 238, 0);
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -83,16 +83,18 @@
 
 
 
-.light:hover{
-  background-color: rgb(68, 121, 165);
-}
+
 
 /* Dark Theme Section */
 
 .dark {
   background-color: rgb(32, 40, 48);
   border-radius: 6px;
-  box-shadow: 10px 0px 0px 0px rgb(126, 4, 106),-10px 0px 0px 0px rgb(126, 4, 106);
+  /*box-shadow: -10px 0px 0px 0px rgb(126, 4, 106), -11px 0px 0px 0px rgb(9, 132, 255);*/
+  
+  box-shadow: 1px 0 0 0 rgb(255, 0, 200); /* Border right */
+  
+  
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -182,9 +184,11 @@ background-color: rgb(24, 27, 29);
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   border-radius: 4px;
-  background-color: #800040;
+  
+  background-color: #000000;
   color: white;
-  border: 1px solid #800040;
+  outline: 3px solid #f700ff;
+  box-shadow: 5px 5px 0 0 #f700ff;
   
 }
 
@@ -202,17 +206,17 @@ background-color: rgb(24, 27, 29);
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   border-radius: 4px;
-  background-color: #c70667;
+  background-color: #000000;
   color: white;
-  border: 1px solid #800040;
-  
+  outline: 3px solid #ffe600;
+  box-shadow: 5px 5px 0 0 #ffe600;
 }
 
 
 
 
 .light >button:hover {
-  background-color: #d32d80;
-  border-color: #ffffff;
+  
+  box-shadow: 1px 1px 0 0 #ffe600;
 }
 

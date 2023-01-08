@@ -94,7 +94,7 @@ function HomePage(props){
                         <p></p>
                         <p>Thank you!</p>
                     </NeoCard>
-                    <Column classNameToGive={classNameString}>
+                    <Column>
                         <LinkSlot classNameToGive={classNameString}>
                         <a href='http://database-fun.herokuapp.com/'>Leave a Message!</a>
                         </LinkSlot>

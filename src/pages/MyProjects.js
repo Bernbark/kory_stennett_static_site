@@ -79,7 +79,21 @@ function ProjectsPage (props){
                     Projects
                 </h1>
             </TitleCard>
-            
+            <Card classNameToGive={classNameString}>
+            <MidTitleCard classNameToGive={classNameString}>
+                          <h1>
+                              Android Studio
+                              
+                          </h1>
+                      </MidTitleCard>
+                    <Column>
+                      <ul style={{listStyle:'none'}}>
+                        <li>One of my favorite projects was an app called the SMARTPrototype, which was meant to help make difficult decisions easier by breaking them down into small parts,
+                          asking questions based on what's more important to the user, and then weighing those results with numbers the user can evaluate their options with.
+                        </li>
+                      </ul>
+                    </Column>
+            </Card>
             <Card classNameToGive={classNameString}>
             <MidTitleCard classNameToGive={classNameString}>
                           <h1>
@@ -92,10 +106,10 @@ function ProjectsPage (props){
                 <h3>Here is a collection of some of my past works, including GitHub portfolios, a second, more experimental website, and my prototype game collection on Itch.io!</h3>
               </Card>
               
-              <Column classNameToGive={classNameString}>
+              <div>
             
                     
-                    <NeoCard classNameToGive={classNameString}>
+                    <Card classNameToGive={classNameString}>
                       
                         <LinkSlot classNameToGive={classNameString}>
                             
@@ -135,10 +149,10 @@ function ProjectsPage (props){
                           
                           
                         </LinkSlot>
-                    </NeoCard>
+                    </Card>
                         
                     
-            </Column>
+            </div>
             </NeoCard>
             </Card>
             
