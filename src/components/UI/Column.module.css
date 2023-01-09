@@ -57,11 +57,21 @@
 .columnLight > ul img{
     max-width: 95%;
     image-rendering: auto;
-  
+    
   
 }
 
+.columnLight > ul a{
+    font-size: 2em;
+    color: black;
+  
+}
 
+.columnLight > ul a:hover{
+    font-size: 2em;
+    color: white;
+  
+}
 
 .columnDark > ul img{
     max-width: 95%;
